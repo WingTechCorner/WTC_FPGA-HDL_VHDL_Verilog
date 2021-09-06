@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /opt/verilog/verilog-ripple-counter/ripple.v -lang verilog -prj verilog-ripple-counter -o .spl -module {} -template /opt/XilinxEmbedded/14.6/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj verilog-ripple-counter -o /opt/verilog/verilog-ripple-counter/.vhi -lib work /opt/verilog/verilog-ripple-counter//ripple.v -module "" -template /opt/XilinxEmbedded/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

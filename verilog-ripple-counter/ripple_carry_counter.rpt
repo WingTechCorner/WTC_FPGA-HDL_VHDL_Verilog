@@ -1,0 +1,627 @@
+ 
+cpldfit:  version P.68d                             Xilinx Inc.
+                                  Fitter Report
+Design Name: ripple_carry_counter                Date: 11- 4-2019,  1:28AM
+Device Used: XC9572-7-TQ100
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+65 /72  ( 90%) 64  /360  ( 18%) 64 /144 ( 44%)   65 /72  ( 90%) 67 /72  ( 93%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Signals     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used        Used/Tot    Used/Tot    
+FB1          16/18       16/36       16          16/90      16/18
+FB2          16/18       16/36       16          16/90      16/18
+FB3          16/18       16/36       16          16/90      16/18
+FB4          17/18       16/36       16          16/90      17/18
+             -----       -----                   -----       -----     
+             65/72       64/144                  64/360     65/72 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+The complement of 'clk' mapped onto global clock net GCK1.
+Global output enable net(s) unused.
+Signal 'reset' mapped onto global set/reset net GSR.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :    0           0    |  I/O              :    61      66
+Output        :   57          57    |  GCK/IO           :     3       3
+Bidirectional :    8           8    |  GTS/IO           :     2       2
+GCK           :    1           1    |  GSR/IO           :     1       1
+GTS           :    0           0    |
+GSR           :    1           1    |
+                 ----        ----
+        Total     67          67
+
+** Power Data **
+
+There are 65 macrocells in high performance mode (MCHP).
+There are 0 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'ripple_carry_counter.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 65 Outputs **
+
+Signal              Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                Pts   Inps          No.  Type    Use     Mode Rate State
+q<10>               1     1     FB1_1   16   I/O     O       STD  FAST RESET
+q<11>               1     1     FB1_2   13   I/O     O       STD  FAST RESET
+q<12>               1     1     FB1_3   18   I/O     O       STD  FAST RESET
+q<13>               1     1     FB1_4   20   I/O     O       STD  FAST RESET
+q<14>               1     1     FB1_5   14   I/O     O       STD  FAST RESET
+q<15>               1     1     FB1_6   15   I/O     O       STD  FAST RESET
+q<16>               1     1     FB1_7   25   I/O     O       STD  FAST RESET
+q<17>               1     1     FB1_8   17   I/O     O       STD  FAST RESET
+q<18>               1     1     FB1_10  28   I/O     O       STD  FAST RESET
+q<19>               1     1     FB1_11  23   GCK/I/O O       STD  FAST RESET
+q<1>                1     1     FB1_12  33   I/O     I/O     STD  FAST RESET
+q<20>               1     1     FB1_13  36   I/O     O       STD  FAST RESET
+q<21>               1     1     FB1_14  27   GCK/I/O O       STD  FAST RESET
+q<22>               1     1     FB1_15  29   I/O     O       STD  FAST RESET
+q<23>               1     1     FB1_16  39   I/O     O       STD  FAST RESET
+q<24>               1     1     FB1_17  30   I/O     I/O     STD  FAST RESET
+q<25>               1     1     FB2_1   87   I/O     O       STD  FAST RESET
+q<26>               1     1     FB2_2   94   I/O     O       STD  FAST RESET
+q<27>               1     1     FB2_3   91   I/O     O       STD  FAST RESET
+q<28>               1     1     FB2_4   93   I/O     O       STD  FAST RESET
+q<29>               1     1     FB2_5   95   I/O     O       STD  FAST RESET
+q<2>                1     1     FB2_6   96   I/O     I/O     STD  FAST RESET
+q<30>               1     1     FB2_7   3    GTS/I/O O       STD  FAST RESET
+q<31>               1     1     FB2_8   97   I/O     O       STD  FAST RESET
+q<32>               1     1     FB2_10  1    I/O     O       STD  FAST RESET
+q<33>               1     1     FB2_11  4    GTS/I/O O       STD  FAST RESET
+q<34>               1     1     FB2_12  6    I/O     O       STD  FAST RESET
+q<35>               1     1     FB2_13  8    I/O     O       STD  FAST RESET
+q<36>               1     1     FB2_14  9    I/O     O       STD  FAST RESET
+q<37>               1     1     FB2_15  11   I/O     O       STD  FAST RESET
+q<38>               1     1     FB2_16  10   I/O     O       STD  FAST RESET
+q<39>               1     1     FB2_17  12   I/O     I/O     STD  FAST RESET
+q<3>                1     1     FB3_1   41   I/O     O       STD  FAST RESET
+q<40>               1     1     FB3_2   32   I/O     O       STD  FAST RESET
+q<41>               1     1     FB3_3   49   I/O     O       STD  FAST RESET
+q<42>               1     1     FB3_4   50   I/O     O       STD  FAST RESET
+q<43>               1     1     FB3_5   35   I/O     O       STD  FAST RESET
+q<44>               1     1     FB3_6   53   I/O     O       STD  FAST RESET
+q<45>               1     1     FB3_7   54   I/O     O       STD  FAST RESET
+q<46>               1     1     FB3_8   37   I/O     O       STD  FAST RESET
+
+Signal              Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                Pts   Inps          No.  Type    Use     Mode Rate State
+q<47>               1     1     FB3_9   42   I/O     O       STD  FAST RESET
+q<48>               1     1     FB3_10  60   I/O     O       STD  FAST RESET
+q<49>               1     1     FB3_11  52   I/O     O       STD  FAST RESET
+q<4>                1     1     FB3_12  61   I/O     I/O     STD  FAST RESET
+q<50>               1     1     FB3_13  63   I/O     O       STD  FAST RESET
+q<51>               1     1     FB3_14  55   I/O     O       STD  FAST RESET
+q<52>               1     1     FB3_15  56   I/O     O       STD  FAST RESET
+q<53>               1     1     FB3_16  65   I/O     I/O     STD  FAST RESET
+q<0>                0     0     FB4_1   66   I/O     I/O     STD  FAST RESET
+q<54>               1     1     FB4_2   64   I/O     O       STD  FAST RESET
+q<55>               1     1     FB4_3   71   I/O     O       STD  FAST RESET
+q<56>               1     1     FB4_4   72   I/O     O       STD  FAST RESET
+q<57>               1     1     FB4_5   67   I/O     O       STD  FAST RESET
+q<58>               1     1     FB4_6   76   I/O     O       STD  FAST RESET
+q<59>               1     1     FB4_7   77   I/O     O       STD  FAST RESET
+q<5>                1     1     FB4_8   68   I/O     O       STD  FAST RESET
+q<60>               1     1     FB4_9   70   I/O     O       STD  FAST RESET
+q<61>               1     1     FB4_10  81   I/O     O       STD  FAST RESET
+q<62>               1     1     FB4_11  74   I/O     O       STD  FAST RESET
+q<63>               1     1     FB4_12  82   I/O     O       STD  FAST RESET
+q<64>               1     1     FB4_13  85   I/O     O       STD  FAST RESET
+q<6>                1     1     FB4_14  78   I/O     O       STD  FAST RESET
+q<7>                1     1     FB4_15  89   I/O     O       STD  FAST RESET
+q<8>                1     1     FB4_16  86   I/O     O       STD  FAST RESET
+q<9>                1     1     FB4_17  90   I/O     I/O     STD  FAST RESET
+
+** 2 Inputs **
+
+Signal              Loc     Pin  Pin     Pin     
+Name                        No.  Type    Use     
+clk                 FB1_9   22~  GCK/I/O GCK
+reset               FB2_9   99~  GSR/I/O GSR
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X(@)         - Signal used as input (wire-AND input) to the macrocell logic.
+               The number of Signals Used may exceed the number of FB Inputs
+               Used due to wire-ANDing in the switch matrix.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               16/20
+Number of signals used by logic mapping into function block:  16
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+q<10>                 1       0     0   4     FB1_1   16    I/O     O
+q<11>                 1       0     0   4     FB1_2   13    I/O     O
+q<12>                 1       0     0   4     FB1_3   18    I/O     O
+q<13>                 1       0     0   4     FB1_4   20    I/O     O
+q<14>                 1       0     0   4     FB1_5   14    I/O     O
+q<15>                 1       0     0   4     FB1_6   15    I/O     O
+q<16>                 1       0     0   4     FB1_7   25    I/O     O
+q<17>                 1       0     0   4     FB1_8   17    I/O     O
+(unused)              0       0     0   5     FB1_9   22    GCK/I/O GCK
+q<18>                 1       0     0   4     FB1_10  28    I/O     O
+q<19>                 1       0     0   4     FB1_11  23    GCK/I/O O
+q<1>                  1       0     0   4     FB1_12  33    I/O     I/O
+q<20>                 1       0     0   4     FB1_13  36    I/O     O
+q<21>                 1       0     0   4     FB1_14  27    GCK/I/O O
+q<22>                 1       0     0   4     FB1_15  29    I/O     O
+q<23>                 1       0     0   4     FB1_16  39    I/O     O
+q<24>                 1       0     0   4     FB1_17  30    I/O     I/O
+(unused)              0       0     0   5     FB1_18  40    I/O     
+
+Signals Used by Logic in Function Block
+  1: q<0>.PIN           7: q_14_OBUF.LFBK    12: q_19_OBUF.LFBK 
+  2: q<9>.PIN           8: q_15_OBUF.LFBK    13: q_20_OBUF.LFBK 
+  3: q_10_OBUF.LFBK     9: q_16_OBUF.LFBK    14: q_21_OBUF.LFBK 
+  4: q_11_OBUF.LFBK    10: q_17_OBUF.LFBK    15: q_22_OBUF.LFBK 
+  5: q_12_OBUF.LFBK    11: q_18_OBUF.LFBK    16: q_23_OBUF.LFBK 
+  6: q_13_OBUF.LFBK   
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+q<10>                .X...................................... 1       1
+q<11>                ..X..................................... 1       1
+q<12>                ...X.................................... 1       1
+q<13>                ....X................................... 1       1
+q<14>                .....X.................................. 1       1
+q<15>                ......X................................. 1       1
+q<16>                .......X................................ 1       1
+q<17>                ........X............................... 1       1
+q<18>                .........X.............................. 1       1
+q<19>                ..........X............................. 1       1
+q<1>                 X....................................... 1       1
+q<20>                ...........X............................ 1       1
+q<21>                ............X........................... 1       1
+q<22>                .............X.......................... 1       1
+q<23>                ..............X......................... 1       1
+q<24>                ...............X........................ 1       1
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               16/20
+Number of signals used by logic mapping into function block:  16
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+q<25>                 1       0     0   4     FB2_1   87    I/O     O
+q<26>                 1       0     0   4     FB2_2   94    I/O     O
+q<27>                 1       0     0   4     FB2_3   91    I/O     O
+q<28>                 1       0     0   4     FB2_4   93    I/O     O
+q<29>                 1       0     0   4     FB2_5   95    I/O     O
+q<2>                  1       0     0   4     FB2_6   96    I/O     I/O
+q<30>                 1       0     0   4     FB2_7   3     GTS/I/O O
+q<31>                 1       0     0   4     FB2_8   97    I/O     O
+(unused)              0       0     0   5     FB2_9   99    GSR/I/O GSR
+q<32>                 1       0     0   4     FB2_10  1     I/O     O
+q<33>                 1       0     0   4     FB2_11  4     GTS/I/O O
+q<34>                 1       0     0   4     FB2_12  6     I/O     O
+q<35>                 1       0     0   4     FB2_13  8     I/O     O
+q<36>                 1       0     0   4     FB2_14  9     I/O     O
+q<37>                 1       0     0   4     FB2_15  11    I/O     O
+q<38>                 1       0     0   4     FB2_16  10    I/O     O
+q<39>                 1       0     0   4     FB2_17  12    I/O     I/O
+(unused)              0       0     0   5     FB2_18  92    I/O     
+
+Signals Used by Logic in Function Block
+  1: q<1>.PIN           7: q_29_OBUF.LFBK    12: q_34_OBUF.LFBK 
+  2: q<24>.PIN          8: q_30_OBUF.LFBK    13: q_35_OBUF.LFBK 
+  3: q_25_OBUF.LFBK     9: q_31_OBUF.LFBK    14: q_36_OBUF.LFBK 
+  4: q_26_OBUF.LFBK    10: q_32_OBUF.LFBK    15: q_37_OBUF.LFBK 
+  5: q_27_OBUF.LFBK    11: q_33_OBUF.LFBK    16: q_38_OBUF.LFBK 
+  6: q_28_OBUF.LFBK   
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+q<25>                .X...................................... 1       1
+q<26>                ..X..................................... 1       1
+q<27>                ...X.................................... 1       1
+q<28>                ....X................................... 1       1
+q<29>                .....X.................................. 1       1
+q<2>                 X....................................... 1       1
+q<30>                ......X................................. 1       1
+q<31>                .......X................................ 1       1
+q<32>                ........X............................... 1       1
+q<33>                .........X.............................. 1       1
+q<34>                ..........X............................. 1       1
+q<35>                ...........X............................ 1       1
+q<36>                ............X........................... 1       1
+q<37>                .............X.......................... 1       1
+q<38>                ..............X......................... 1       1
+q<39>                ...............X........................ 1       1
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               16/20
+Number of signals used by logic mapping into function block:  16
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+q<3>                  1       0     0   4     FB3_1   41    I/O     O
+q<40>                 1       0     0   4     FB3_2   32    I/O     O
+q<41>                 1       0     0   4     FB3_3   49    I/O     O
+q<42>                 1       0     0   4     FB3_4   50    I/O     O
+q<43>                 1       0     0   4     FB3_5   35    I/O     O
+q<44>                 1       0     0   4     FB3_6   53    I/O     O
+q<45>                 1       0     0   4     FB3_7   54    I/O     O
+q<46>                 1       0     0   4     FB3_8   37    I/O     O
+q<47>                 1       0     0   4     FB3_9   42    I/O     O
+q<48>                 1       0     0   4     FB3_10  60    I/O     O
+q<49>                 1       0     0   4     FB3_11  52    I/O     O
+q<4>                  1       0     0   4     FB3_12  61    I/O     I/O
+q<50>                 1       0     0   4     FB3_13  63    I/O     O
+q<51>                 1       0     0   4     FB3_14  55    I/O     O
+q<52>                 1       0     0   4     FB3_15  56    I/O     O
+q<53>                 1       0     0   4     FB3_16  65    I/O     I/O
+(unused)              0       0     0   5     FB3_17  58    I/O     
+(unused)              0       0     0   5     FB3_18  59    I/O     
+
+Signals Used by Logic in Function Block
+  1: q<2>.PIN           7: q_43_OBUF.LFBK    12: q_48_OBUF.LFBK 
+  2: q<39>.PIN          8: q_44_OBUF.LFBK    13: q_49_OBUF.LFBK 
+  3: q_3_OBUF.LFBK      9: q_45_OBUF.LFBK    14: q_50_OBUF.LFBK 
+  4: q_40_OBUF.LFBK    10: q_46_OBUF.LFBK    15: q_51_OBUF.LFBK 
+  5: q_41_OBUF.LFBK    11: q_47_OBUF.LFBK    16: q_52_OBUF.LFBK 
+  6: q_42_OBUF.LFBK   
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+q<3>                 X....................................... 1       1
+q<40>                .X...................................... 1       1
+q<41>                ...X.................................... 1       1
+q<42>                ....X................................... 1       1
+q<43>                .....X.................................. 1       1
+q<44>                ......X................................. 1       1
+q<45>                .......X................................ 1       1
+q<46>                ........X............................... 1       1
+q<47>                .........X.............................. 1       1
+q<48>                ..........X............................. 1       1
+q<49>                ...........X............................ 1       1
+q<4>                 ..X..................................... 1       1
+q<50>                ............X........................... 1       1
+q<51>                .............X.......................... 1       1
+q<52>                ..............X......................... 1       1
+q<53>                ...............X........................ 1       1
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               16/20
+Number of signals used by logic mapping into function block:  16
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+q<0>                  0       0     0   5     FB4_1   66    I/O     I/O
+q<54>                 1       0     0   4     FB4_2   64    I/O     O
+q<55>                 1       0     0   4     FB4_3   71    I/O     O
+q<56>                 1       0     0   4     FB4_4   72    I/O     O
+q<57>                 1       0     0   4     FB4_5   67    I/O     O
+q<58>                 1       0     0   4     FB4_6   76    I/O     O
+q<59>                 1       0     0   4     FB4_7   77    I/O     O
+q<5>                  1       0     0   4     FB4_8   68    I/O     O
+q<60>                 1       0     0   4     FB4_9   70    I/O     O
+q<61>                 1       0     0   4     FB4_10  81    I/O     O
+q<62>                 1       0     0   4     FB4_11  74    I/O     O
+q<63>                 1       0     0   4     FB4_12  82    I/O     O
+q<64>                 1       0     0   4     FB4_13  85    I/O     O
+q<6>                  1       0     0   4     FB4_14  78    I/O     O
+q<7>                  1       0     0   4     FB4_15  89    I/O     O
+q<8>                  1       0     0   4     FB4_16  86    I/O     O
+q<9>                  1       0     0   4     FB4_17  90    I/O     I/O
+(unused)              0       0     0   5     FB4_18  79    I/O     
+
+Signals Used by Logic in Function Block
+  1: q<4>.PIN           7: q_58_OBUF.LFBK    12: q_62_OBUF.LFBK 
+  2: q<53>.PIN          8: q_59_OBUF.LFBK    13: q_63_OBUF.LFBK 
+  3: q_54_OBUF.LFBK     9: q_5_OBUF.LFBK     14: q_6_OBUF.LFBK 
+  4: q_55_OBUF.LFBK    10: q_60_OBUF.LFBK    15: q_7_OBUF.LFBK 
+  5: q_56_OBUF.LFBK    11: q_61_OBUF.LFBK    16: q_8_OBUF.LFBK 
+  6: q_57_OBUF.LFBK   
+
+Signal                        1         2         3         4 Signals FB
+Name                0----+----0----+----0----+----0----+----0 Used    Inputs
+q<0>                 ........................................ 0       0
+q<54>                .X...................................... 1       1
+q<55>                ..X..................................... 1       1
+q<56>                ...X.................................... 1       1
+q<57>                ....X................................... 1       1
+q<58>                .....X.................................. 1       1
+q<59>                ......X................................. 1       1
+q<5>                 X....................................... 1       1
+q<60>                .......X................................ 1       1
+q<61>                .........X.............................. 1       1
+q<62>                ..........X............................. 1       1
+q<63>                ...........X............................ 1       1
+q<64>                ............X........................... 1       1
+q<6>                 ........X............................... 1       1
+q<7>                 .............X.......................... 1       1
+q<8>                 ..............X......................... 1       1
+q<9>                 ...............X........................ 1       1
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+FTCPE_q0: FTCPE port map (q(0),'1',NOT clk,reset,'0');
+
+FTCPE_q1: FTCPE port map (q(1),'1',NOT q(0).PIN,reset,'0');
+
+FTCPE_q2: FTCPE port map (q(2),'1',NOT q(1).PIN,reset,'0');
+
+FTCPE_q3: FTCPE port map (q(3),'1',NOT q(2).PIN,reset,'0');
+
+FTCPE_q4: FTCPE port map (q(4),'1',NOT q_3_OBUF.LFBK,reset,'0');
+
+FTCPE_q5: FTCPE port map (q(5),'1',NOT q(4).PIN,reset,'0');
+
+FTCPE_q6: FTCPE port map (q(6),'1',NOT q_5_OBUF.LFBK,reset,'0');
+
+FTCPE_q7: FTCPE port map (q(7),'1',NOT q_6_OBUF.LFBK,reset,'0');
+
+FTCPE_q8: FTCPE port map (q(8),'1',NOT q_7_OBUF.LFBK,reset,'0');
+
+FTCPE_q9: FTCPE port map (q(9),'1',NOT q_8_OBUF.LFBK,reset,'0');
+
+FTCPE_q10: FTCPE port map (q(10),'1',NOT q(9).PIN,reset,'0');
+
+FTCPE_q11: FTCPE port map (q(11),'1',NOT q_10_OBUF.LFBK,reset,'0');
+
+FTCPE_q12: FTCPE port map (q(12),'1',NOT q_11_OBUF.LFBK,reset,'0');
+
+FTCPE_q13: FTCPE port map (q(13),'1',NOT q_12_OBUF.LFBK,reset,'0');
+
+FTCPE_q14: FTCPE port map (q(14),'1',NOT q_13_OBUF.LFBK,reset,'0');
+
+FTCPE_q15: FTCPE port map (q(15),'1',NOT q_14_OBUF.LFBK,reset,'0');
+
+FTCPE_q16: FTCPE port map (q(16),'1',NOT q_15_OBUF.LFBK,reset,'0');
+
+FTCPE_q17: FTCPE port map (q(17),'1',NOT q_16_OBUF.LFBK,reset,'0');
+
+FTCPE_q18: FTCPE port map (q(18),'1',NOT q_17_OBUF.LFBK,reset,'0');
+
+FTCPE_q19: FTCPE port map (q(19),'1',NOT q_18_OBUF.LFBK,reset,'0');
+
+FTCPE_q20: FTCPE port map (q(20),'1',NOT q_19_OBUF.LFBK,reset,'0');
+
+FTCPE_q21: FTCPE port map (q(21),'1',NOT q_20_OBUF.LFBK,reset,'0');
+
+FTCPE_q22: FTCPE port map (q(22),'1',NOT q_21_OBUF.LFBK,reset,'0');
+
+FTCPE_q23: FTCPE port map (q(23),'1',NOT q_22_OBUF.LFBK,reset,'0');
+
+FTCPE_q24: FTCPE port map (q(24),'1',NOT q_23_OBUF.LFBK,reset,'0');
+
+FTCPE_q25: FTCPE port map (q(25),'1',NOT q(24).PIN,reset,'0');
+
+FTCPE_q26: FTCPE port map (q(26),'1',NOT q_25_OBUF.LFBK,reset,'0');
+
+FTCPE_q27: FTCPE port map (q(27),'1',NOT q_26_OBUF.LFBK,reset,'0');
+
+FTCPE_q28: FTCPE port map (q(28),'1',NOT q_27_OBUF.LFBK,reset,'0');
+
+FTCPE_q29: FTCPE port map (q(29),'1',NOT q_28_OBUF.LFBK,reset,'0');
+
+FTCPE_q30: FTCPE port map (q(30),'1',NOT q_29_OBUF.LFBK,reset,'0');
+
+FTCPE_q31: FTCPE port map (q(31),'1',NOT q_30_OBUF.LFBK,reset,'0');
+
+FTCPE_q32: FTCPE port map (q(32),'1',NOT q_31_OBUF.LFBK,reset,'0');
+
+FTCPE_q33: FTCPE port map (q(33),'1',NOT q_32_OBUF.LFBK,reset,'0');
+
+FTCPE_q34: FTCPE port map (q(34),'1',NOT q_33_OBUF.LFBK,reset,'0');
+
+FTCPE_q35: FTCPE port map (q(35),'1',NOT q_34_OBUF.LFBK,reset,'0');
+
+FTCPE_q36: FTCPE port map (q(36),'1',NOT q_35_OBUF.LFBK,reset,'0');
+
+FTCPE_q37: FTCPE port map (q(37),'1',NOT q_36_OBUF.LFBK,reset,'0');
+
+FTCPE_q38: FTCPE port map (q(38),'1',NOT q_37_OBUF.LFBK,reset,'0');
+
+FTCPE_q39: FTCPE port map (q(39),'1',NOT q_38_OBUF.LFBK,reset,'0');
+
+FTCPE_q40: FTCPE port map (q(40),'1',NOT q(39).PIN,reset,'0');
+
+FTCPE_q41: FTCPE port map (q(41),'1',NOT q_40_OBUF.LFBK,reset,'0');
+
+FTCPE_q42: FTCPE port map (q(42),'1',NOT q_41_OBUF.LFBK,reset,'0');
+
+FTCPE_q43: FTCPE port map (q(43),'1',NOT q_42_OBUF.LFBK,reset,'0');
+
+FTCPE_q44: FTCPE port map (q(44),'1',NOT q_43_OBUF.LFBK,reset,'0');
+
+FTCPE_q45: FTCPE port map (q(45),'1',NOT q_44_OBUF.LFBK,reset,'0');
+
+FTCPE_q46: FTCPE port map (q(46),'1',NOT q_45_OBUF.LFBK,reset,'0');
+
+FTCPE_q47: FTCPE port map (q(47),'1',NOT q_46_OBUF.LFBK,reset,'0');
+
+FTCPE_q48: FTCPE port map (q(48),'1',NOT q_47_OBUF.LFBK,reset,'0');
+
+FTCPE_q49: FTCPE port map (q(49),'1',NOT q_48_OBUF.LFBK,reset,'0');
+
+FTCPE_q50: FTCPE port map (q(50),'1',NOT q_49_OBUF.LFBK,reset,'0');
+
+FTCPE_q51: FTCPE port map (q(51),'1',NOT q_50_OBUF.LFBK,reset,'0');
+
+FTCPE_q52: FTCPE port map (q(52),'1',NOT q_51_OBUF.LFBK,reset,'0');
+
+FTCPE_q53: FTCPE port map (q(53),'1',NOT q_52_OBUF.LFBK,reset,'0');
+
+FTCPE_q54: FTCPE port map (q(54),'1',NOT q(53).PIN,reset,'0');
+
+FTCPE_q55: FTCPE port map (q(55),'1',NOT q_54_OBUF.LFBK,reset,'0');
+
+FTCPE_q56: FTCPE port map (q(56),'1',NOT q_55_OBUF.LFBK,reset,'0');
+
+FTCPE_q57: FTCPE port map (q(57),'1',NOT q_56_OBUF.LFBK,reset,'0');
+
+FTCPE_q58: FTCPE port map (q(58),'1',NOT q_57_OBUF.LFBK,reset,'0');
+
+FTCPE_q59: FTCPE port map (q(59),'1',NOT q_58_OBUF.LFBK,reset,'0');
+
+FTCPE_q60: FTCPE port map (q(60),'1',NOT q_59_OBUF.LFBK,reset,'0');
+
+FTCPE_q61: FTCPE port map (q(61),'1',NOT q_60_OBUF.LFBK,reset,'0');
+
+FTCPE_q62: FTCPE port map (q(62),'1',NOT q_61_OBUF.LFBK,reset,'0');
+
+FTCPE_q63: FTCPE port map (q(63),'1',NOT q_62_OBUF.LFBK,reset,'0');
+
+FTCPE_q64: FTCPE port map (q(64),'1',NOT q_63_OBUF.LFBK,reset,'0');
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE); 
+ FTCPE (Q,D,C,CLR,PRE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC9572-7-TQ100
+
+
+   --------------------------------------------------  
+  /100 98  96  94  92  90  88  86  84  82  80  78  76  \
+ |   99  97  95  93  91  89  87  85  83  81  79  77    |
+ | 1                                               75  | 
+ | 2                                               74  | 
+ | 3                                               73  | 
+ | 4                                               72  | 
+ | 5                                               71  | 
+ | 6                                               70  | 
+ | 7                                               69  | 
+ | 8                                               68  | 
+ | 9                                               67  | 
+ | 10                                              66  | 
+ | 11                                              65  | 
+ | 12                                              64  | 
+ | 13                XC9572-7-TQ100                63  | 
+ | 14                                              62  | 
+ | 15                                              61  | 
+ | 16                                              60  | 
+ | 17                                              59  | 
+ | 18                                              58  | 
+ | 19                                              57  | 
+ | 20                                              56  | 
+ | 21                                              55  | 
+ | 22                                              54  | 
+ | 23                                              53  | 
+ | 24                                              52  | 
+ | 25                                              51  | 
+ |   27  29  31  33  35  37  39  41  43  45  47  49    |
+  \26  28  30  32  34  36  38  40  42  44  46  48  50  /
+   --------------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 q<32>                            51 VCC                           
+  2 NC                               52 q<49>                         
+  3 q<30>                            53 q<44>                         
+  4 q<33>                            54 q<45>                         
+  5 VCC                              55 q<51>                         
+  6 q<34>                            56 q<52>                         
+  7 NC                               57 VCC                           
+  8 q<35>                            58 TIE                           
+  9 q<36>                            59 TIE                           
+ 10 q<38>                            60 q<48>                         
+ 11 q<37>                            61 q<4>                          
+ 12 q<39>                            62 GND                           
+ 13 q<11>                            63 q<50>                         
+ 14 q<14>                            64 q<54>                         
+ 15 q<15>                            65 q<53>                         
+ 16 q<10>                            66 q<0>                          
+ 17 q<17>                            67 q<57>                         
+ 18 q<12>                            68 q<5>                          
+ 19 NC                               69 GND                           
+ 20 q<13>                            70 q<60>                         
+ 21 GND                              71 q<55>                         
+ 22 clk                              72 q<56>                         
+ 23 q<19>                            73 NC                            
+ 24 NC                               74 q<62>                         
+ 25 q<16>                            75 GND                           
+ 26 VCC                              76 q<58>                         
+ 27 q<21>                            77 q<59>                         
+ 28 q<18>                            78 q<6>                          
+ 29 q<22>                            79 TIE                           
+ 30 q<24>                            80 NC                            
+ 31 GND                              81 q<61>                         
+ 32 q<40>                            82 q<63>                         
+ 33 q<1>                             83 TDO                           
+ 34 NC                               84 GND                           
+ 35 q<43>                            85 q<64>                         
+ 36 q<20>                            86 q<8>                          
+ 37 q<46>                            87 q<25>                         
+ 38 VCC                              88 VCC                           
+ 39 q<23>                            89 q<7>                          
+ 40 TIE                              90 q<9>                          
+ 41 q<3>                             91 q<27>                         
+ 42 q<47>                            92 TIE                           
+ 43 NC                               93 q<28>                         
+ 44 GND                              94 q<26>                         
+ 45 TDI                              95 q<29>                         
+ 46 NC                               96 q<2>                          
+ 47 TMS                              97 q<31>                         
+ 48 TCK                              98 VCC                           
+ 49 q<41>                            99 reset                         
+ 50 q<42>                           100 GND                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc9572-7-TQ100
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : STD
+Ground on Unused IOs                        : OFF
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+FASTConnect/UIM optimzation                 : ON
+Local Feedback                              : ON
+Pin Feedback                                : ON
+Input Limit                                 : 36
+Pterm Limit                                 : 25

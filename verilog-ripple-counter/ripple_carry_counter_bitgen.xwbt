@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/opt/verilog/verilog-ripple-counter/ripple_carry_counter.ncd
+OUTFILE=/opt/verilog/verilog-ripple-counter/ripple_carry_counter.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/opt/verilog/verilog-ripple-counter
+LICENSE=ISE
+USER_INFO=211821267_0_0_120

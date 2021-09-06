@@ -1,0 +1,3 @@
+vhdtdtfi -lib work /opt/verilog/verilog-ripple-counter/ripple.v -lang verilog -prj verilog-ripple-counter -o D_FF.spl -module D_FF -template /opt/XilinxEmbedded/14.6/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 D_FF.spl /opt/verilog/verilog-ripple-counter/D_FF.sym 
+vhdtdtfi -lang verilog -prj verilog-ripple-counter -o /opt/verilog/verilog-ripple-counter/D_FF.vhi -lib work /opt/verilog/verilog-ripple-counter//ripple.v -module D_FF -template /opt/XilinxEmbedded/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

@@ -1,0 +1,2888 @@
+NDS Database:  version P.68d
+
+NDS_INFO | xc9500 | 9572100TQ | XC9572-7-TQ100
+
+DEVICE | 9572 | 9572100TQ | 
+
+NETWORK | ripple_carry_counter | 0 | 0 | 201342983
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_IBUF | ripple_carry_counter_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk | 3651 | PI | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 7 | 5 | II_FCLKINV
+NODE | FCLK-IO_0 | 3455 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 7 | 5 | II_FCLKINV
+
+INPUT_INSTANCE | 0 | 0 | NULL | reset_IBUF | ripple_carry_counter_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | reset | 3652 | PI | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 6 | 5 | II_FSR
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+OeInv | q_0_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2290095104 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLK-IO_0 | 3455 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 7 | 5 | II_FCLKINV
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_0_OBUF$Q | 3457 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_0_OBUF.Q | q_0_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_0_OBUF | 3458 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_0_OBUF.Q | q_0_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | q_0_OBUF.SI | q_0_OBUF | 0 | 0 | 2
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_0_OBUF.D1 | 3654 | ? | 0 | 4096 | q_0_OBUF | NULL | NULL | q_0_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_0_OBUF.D2 | 3655 | ? | 0 | 4096 | q_0_OBUF | NULL | NULL | q_0_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+
+SRFF_INSTANCE | q_0_OBUF.REG | q_0_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_0_OBUF.D | 3653 | ? | 0 | 0 | q_0_OBUF | NULL | NULL | q_0_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLK-IO_0 | 3455 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | clk_IBUF | 7 | 5 | II_FCLKINV
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_0_OBUF.Q | 3656 | ? | 0 | 0 | q_0_OBUF | NULL | NULL | q_0_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_10_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<9>_PIN_BUF_ | 4040 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<9> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_10_OBUF$Q | 3459 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_10_OBUF.Q | q_10_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_10_OBUF | 3460 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_10_OBUF.Q | q_10_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_10_OBUF.FBK | 3977 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_10_OBUF.Q | q_10_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_10_OBUF.SI | q_10_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<9>_PIN_BUF_ | 4040 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<9> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_10_OBUF.D1 | 3658 | ? | 0 | 4096 | q_10_OBUF | NULL | NULL | q_10_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_10_OBUF.D2 | 3659 | ? | 0 | 4096 | q_10_OBUF | NULL | NULL | q_10_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_10_OBUF.CLKF | 3660 | ? | 0 | 4096 | q_10_OBUF | NULL | NULL | q_10_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<9>_PIN_BUF_
+
+SRFF_INSTANCE | q_10_OBUF.REG | q_10_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_10_OBUF.D | 3657 | ? | 0 | 0 | q_10_OBUF | NULL | NULL | q_10_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_10_OBUF.CLKF | 3660 | ? | 0 | 4096 | q_10_OBUF | NULL | NULL | q_10_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<9>_PIN_BUF_
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_10_OBUF.Q | 3661 | ? | 0 | 0 | q_10_OBUF | NULL | NULL | q_10_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_11_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_10_OBUF.FBK | 3977 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_10_OBUF.Q | q_10_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_11_OBUF$Q | 3461 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_11_OBUF.Q | q_11_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_11_OBUF | 3462 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_11_OBUF.Q | q_11_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_11_OBUF.FBK | 3978 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_11_OBUF.Q | q_11_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_11_OBUF.SI | q_11_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_10_OBUF.FBK | 3977 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_10_OBUF.Q | q_10_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_11_OBUF.D1 | 3663 | ? | 0 | 4096 | q_11_OBUF | NULL | NULL | q_11_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_11_OBUF.D2 | 3664 | ? | 0 | 4096 | q_11_OBUF | NULL | NULL | q_11_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_11_OBUF.CLKF | 3665 | ? | 0 | 4096 | q_11_OBUF | NULL | NULL | q_11_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_10_OBUF.FBK
+
+SRFF_INSTANCE | q_11_OBUF.REG | q_11_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_11_OBUF.D | 3662 | ? | 0 | 0 | q_11_OBUF | NULL | NULL | q_11_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_11_OBUF.CLKF | 3665 | ? | 0 | 4096 | q_11_OBUF | NULL | NULL | q_11_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_10_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_11_OBUF.Q | 3666 | ? | 0 | 0 | q_11_OBUF | NULL | NULL | q_11_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_12_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_11_OBUF.FBK | 3978 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_11_OBUF.Q | q_11_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_12_OBUF$Q | 3463 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_12_OBUF.Q | q_12_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_12_OBUF | 3464 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_12_OBUF.Q | q_12_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_12_OBUF.FBK | 3979 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_12_OBUF.Q | q_12_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_12_OBUF.SI | q_12_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_11_OBUF.FBK | 3978 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_11_OBUF.Q | q_11_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_12_OBUF.D1 | 3668 | ? | 0 | 4096 | q_12_OBUF | NULL | NULL | q_12_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_12_OBUF.D2 | 3669 | ? | 0 | 4096 | q_12_OBUF | NULL | NULL | q_12_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_12_OBUF.CLKF | 3670 | ? | 0 | 4096 | q_12_OBUF | NULL | NULL | q_12_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_11_OBUF.FBK
+
+SRFF_INSTANCE | q_12_OBUF.REG | q_12_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_12_OBUF.D | 3667 | ? | 0 | 0 | q_12_OBUF | NULL | NULL | q_12_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_12_OBUF.CLKF | 3670 | ? | 0 | 4096 | q_12_OBUF | NULL | NULL | q_12_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_11_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_12_OBUF.Q | 3671 | ? | 0 | 0 | q_12_OBUF | NULL | NULL | q_12_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_13_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_12_OBUF.FBK | 3979 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_12_OBUF.Q | q_12_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_13_OBUF$Q | 3465 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_13_OBUF.Q | q_13_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_13_OBUF | 3466 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_13_OBUF.Q | q_13_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_13_OBUF.FBK | 3980 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_13_OBUF.Q | q_13_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_13_OBUF.SI | q_13_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_12_OBUF.FBK | 3979 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_12_OBUF.Q | q_12_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_13_OBUF.D1 | 3673 | ? | 0 | 4096 | q_13_OBUF | NULL | NULL | q_13_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_13_OBUF.D2 | 3674 | ? | 0 | 4096 | q_13_OBUF | NULL | NULL | q_13_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_13_OBUF.CLKF | 3675 | ? | 0 | 4096 | q_13_OBUF | NULL | NULL | q_13_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_12_OBUF.FBK
+
+SRFF_INSTANCE | q_13_OBUF.REG | q_13_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_13_OBUF.D | 3672 | ? | 0 | 0 | q_13_OBUF | NULL | NULL | q_13_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_13_OBUF.CLKF | 3675 | ? | 0 | 4096 | q_13_OBUF | NULL | NULL | q_13_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_12_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_13_OBUF.Q | 3676 | ? | 0 | 0 | q_13_OBUF | NULL | NULL | q_13_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_14_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_13_OBUF.FBK | 3980 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_13_OBUF.Q | q_13_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_14_OBUF$Q | 3467 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_14_OBUF.Q | q_14_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_14_OBUF | 3468 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_14_OBUF.Q | q_14_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_14_OBUF.FBK | 3981 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_14_OBUF.Q | q_14_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_14_OBUF.SI | q_14_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_13_OBUF.FBK | 3980 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_13_OBUF.Q | q_13_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_14_OBUF.D1 | 3678 | ? | 0 | 4096 | q_14_OBUF | NULL | NULL | q_14_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_14_OBUF.D2 | 3679 | ? | 0 | 4096 | q_14_OBUF | NULL | NULL | q_14_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_14_OBUF.CLKF | 3680 | ? | 0 | 4096 | q_14_OBUF | NULL | NULL | q_14_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_13_OBUF.FBK
+
+SRFF_INSTANCE | q_14_OBUF.REG | q_14_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_14_OBUF.D | 3677 | ? | 0 | 0 | q_14_OBUF | NULL | NULL | q_14_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_14_OBUF.CLKF | 3680 | ? | 0 | 4096 | q_14_OBUF | NULL | NULL | q_14_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_13_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_14_OBUF.Q | 3681 | ? | 0 | 0 | q_14_OBUF | NULL | NULL | q_14_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_15_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_14_OBUF.FBK | 3981 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_14_OBUF.Q | q_14_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_15_OBUF$Q | 3469 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_15_OBUF.Q | q_15_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_15_OBUF | 3470 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_15_OBUF.Q | q_15_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_15_OBUF.FBK | 3982 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_15_OBUF.Q | q_15_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_15_OBUF.SI | q_15_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_14_OBUF.FBK | 3981 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_14_OBUF.Q | q_14_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_15_OBUF.D1 | 3683 | ? | 0 | 4096 | q_15_OBUF | NULL | NULL | q_15_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_15_OBUF.D2 | 3684 | ? | 0 | 4096 | q_15_OBUF | NULL | NULL | q_15_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_15_OBUF.CLKF | 3685 | ? | 0 | 4096 | q_15_OBUF | NULL | NULL | q_15_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_14_OBUF.FBK
+
+SRFF_INSTANCE | q_15_OBUF.REG | q_15_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_15_OBUF.D | 3682 | ? | 0 | 0 | q_15_OBUF | NULL | NULL | q_15_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_15_OBUF.CLKF | 3685 | ? | 0 | 4096 | q_15_OBUF | NULL | NULL | q_15_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_14_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_15_OBUF.Q | 3686 | ? | 0 | 0 | q_15_OBUF | NULL | NULL | q_15_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_16_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_15_OBUF.FBK | 3982 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_15_OBUF.Q | q_15_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_16_OBUF$Q | 3471 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_16_OBUF.Q | q_16_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_16_OBUF | 3472 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_16_OBUF.Q | q_16_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_16_OBUF.FBK | 3983 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_16_OBUF.Q | q_16_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_16_OBUF.SI | q_16_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_15_OBUF.FBK | 3982 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_15_OBUF.Q | q_15_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_16_OBUF.D1 | 3688 | ? | 0 | 4096 | q_16_OBUF | NULL | NULL | q_16_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_16_OBUF.D2 | 3689 | ? | 0 | 4096 | q_16_OBUF | NULL | NULL | q_16_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_16_OBUF.CLKF | 3690 | ? | 0 | 4096 | q_16_OBUF | NULL | NULL | q_16_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_15_OBUF.FBK
+
+SRFF_INSTANCE | q_16_OBUF.REG | q_16_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_16_OBUF.D | 3687 | ? | 0 | 0 | q_16_OBUF | NULL | NULL | q_16_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_16_OBUF.CLKF | 3690 | ? | 0 | 4096 | q_16_OBUF | NULL | NULL | q_16_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_15_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_16_OBUF.Q | 3691 | ? | 0 | 0 | q_16_OBUF | NULL | NULL | q_16_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_17_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_16_OBUF.FBK | 3983 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_16_OBUF.Q | q_16_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_17_OBUF$Q | 3473 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_17_OBUF.Q | q_17_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_17_OBUF | 3474 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_17_OBUF.Q | q_17_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_17_OBUF.FBK | 3984 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_17_OBUF.Q | q_17_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_17_OBUF.SI | q_17_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_16_OBUF.FBK | 3983 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_16_OBUF.Q | q_16_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_17_OBUF.D1 | 3693 | ? | 0 | 4096 | q_17_OBUF | NULL | NULL | q_17_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_17_OBUF.D2 | 3694 | ? | 0 | 4096 | q_17_OBUF | NULL | NULL | q_17_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_17_OBUF.CLKF | 3695 | ? | 0 | 4096 | q_17_OBUF | NULL | NULL | q_17_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_16_OBUF.FBK
+
+SRFF_INSTANCE | q_17_OBUF.REG | q_17_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_17_OBUF.D | 3692 | ? | 0 | 0 | q_17_OBUF | NULL | NULL | q_17_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_17_OBUF.CLKF | 3695 | ? | 0 | 4096 | q_17_OBUF | NULL | NULL | q_17_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_16_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_17_OBUF.Q | 3696 | ? | 0 | 0 | q_17_OBUF | NULL | NULL | q_17_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_18_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_17_OBUF.FBK | 3984 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_17_OBUF.Q | q_17_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_18_OBUF$Q | 3475 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_18_OBUF.Q | q_18_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_18_OBUF | 3476 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_18_OBUF.Q | q_18_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_18_OBUF.FBK | 3985 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_18_OBUF.Q | q_18_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_18_OBUF.SI | q_18_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_17_OBUF.FBK | 3984 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_17_OBUF.Q | q_17_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_18_OBUF.D1 | 3698 | ? | 0 | 4096 | q_18_OBUF | NULL | NULL | q_18_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_18_OBUF.D2 | 3699 | ? | 0 | 4096 | q_18_OBUF | NULL | NULL | q_18_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_18_OBUF.CLKF | 3700 | ? | 0 | 4096 | q_18_OBUF | NULL | NULL | q_18_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_17_OBUF.FBK
+
+SRFF_INSTANCE | q_18_OBUF.REG | q_18_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_18_OBUF.D | 3697 | ? | 0 | 0 | q_18_OBUF | NULL | NULL | q_18_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_18_OBUF.CLKF | 3700 | ? | 0 | 4096 | q_18_OBUF | NULL | NULL | q_18_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_17_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_18_OBUF.Q | 3701 | ? | 0 | 0 | q_18_OBUF | NULL | NULL | q_18_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_19_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_18_OBUF.FBK | 3985 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_18_OBUF.Q | q_18_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_19_OBUF$Q | 3477 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_19_OBUF.Q | q_19_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_19_OBUF | 3478 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_19_OBUF.Q | q_19_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_19_OBUF.FBK | 3986 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_19_OBUF.Q | q_19_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_19_OBUF.SI | q_19_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_18_OBUF.FBK | 3985 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_18_OBUF.Q | q_18_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_19_OBUF.D1 | 3703 | ? | 0 | 4096 | q_19_OBUF | NULL | NULL | q_19_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_19_OBUF.D2 | 3704 | ? | 0 | 4096 | q_19_OBUF | NULL | NULL | q_19_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_19_OBUF.CLKF | 3705 | ? | 0 | 4096 | q_19_OBUF | NULL | NULL | q_19_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_18_OBUF.FBK
+
+SRFF_INSTANCE | q_19_OBUF.REG | q_19_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_19_OBUF.D | 3702 | ? | 0 | 0 | q_19_OBUF | NULL | NULL | q_19_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_19_OBUF.CLKF | 3705 | ? | 0 | 4096 | q_19_OBUF | NULL | NULL | q_19_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_18_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_19_OBUF.Q | 3706 | ? | 0 | 0 | q_19_OBUF | NULL | NULL | q_19_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+OeInv | q_1_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2290095104 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<0>_PIN_BUF_ | 4033 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<0> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_1_OBUF$Q | 3479 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_1_OBUF.Q | q_1_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_1_OBUF | 3480 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_1_OBUF.Q | q_1_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | q_1_OBUF.SI | q_1_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<0>_PIN_BUF_ | 4033 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<0> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_1_OBUF.D1 | 3708 | ? | 0 | 4096 | q_1_OBUF | NULL | NULL | q_1_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_1_OBUF.D2 | 3709 | ? | 0 | 4096 | q_1_OBUF | NULL | NULL | q_1_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_1_OBUF.CLKF | 3710 | ? | 0 | 4096 | q_1_OBUF | NULL | NULL | q_1_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<0>_PIN_BUF_
+
+SRFF_INSTANCE | q_1_OBUF.REG | q_1_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_1_OBUF.D | 3707 | ? | 0 | 0 | q_1_OBUF | NULL | NULL | q_1_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_1_OBUF.CLKF | 3710 | ? | 0 | 4096 | q_1_OBUF | NULL | NULL | q_1_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<0>_PIN_BUF_
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_1_OBUF.Q | 3711 | ? | 0 | 0 | q_1_OBUF | NULL | NULL | q_1_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_20_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_19_OBUF.FBK | 3986 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_19_OBUF.Q | q_19_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_20_OBUF$Q | 3481 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_20_OBUF.Q | q_20_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_20_OBUF | 3482 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_20_OBUF.Q | q_20_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_20_OBUF.FBK | 3987 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_20_OBUF.Q | q_20_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_20_OBUF.SI | q_20_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_19_OBUF.FBK | 3986 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_19_OBUF.Q | q_19_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_20_OBUF.D1 | 3713 | ? | 0 | 4096 | q_20_OBUF | NULL | NULL | q_20_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_20_OBUF.D2 | 3714 | ? | 0 | 4096 | q_20_OBUF | NULL | NULL | q_20_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_20_OBUF.CLKF | 3715 | ? | 0 | 4096 | q_20_OBUF | NULL | NULL | q_20_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_19_OBUF.FBK
+
+SRFF_INSTANCE | q_20_OBUF.REG | q_20_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_20_OBUF.D | 3712 | ? | 0 | 0 | q_20_OBUF | NULL | NULL | q_20_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_20_OBUF.CLKF | 3715 | ? | 0 | 4096 | q_20_OBUF | NULL | NULL | q_20_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_19_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_20_OBUF.Q | 3716 | ? | 0 | 0 | q_20_OBUF | NULL | NULL | q_20_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_21_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_20_OBUF.FBK | 3987 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_20_OBUF.Q | q_20_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_21_OBUF$Q | 3483 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_21_OBUF.Q | q_21_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_21_OBUF | 3484 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_21_OBUF.Q | q_21_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_21_OBUF.FBK | 3988 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_21_OBUF.Q | q_21_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_21_OBUF.SI | q_21_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_20_OBUF.FBK | 3987 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_20_OBUF.Q | q_20_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_21_OBUF.D1 | 3718 | ? | 0 | 4096 | q_21_OBUF | NULL | NULL | q_21_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_21_OBUF.D2 | 3719 | ? | 0 | 4096 | q_21_OBUF | NULL | NULL | q_21_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_21_OBUF.CLKF | 3720 | ? | 0 | 4096 | q_21_OBUF | NULL | NULL | q_21_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_20_OBUF.FBK
+
+SRFF_INSTANCE | q_21_OBUF.REG | q_21_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_21_OBUF.D | 3717 | ? | 0 | 0 | q_21_OBUF | NULL | NULL | q_21_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_21_OBUF.CLKF | 3720 | ? | 0 | 4096 | q_21_OBUF | NULL | NULL | q_21_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_20_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_21_OBUF.Q | 3721 | ? | 0 | 0 | q_21_OBUF | NULL | NULL | q_21_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_22_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_21_OBUF.FBK | 3988 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_21_OBUF.Q | q_21_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_22_OBUF$Q | 3485 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_22_OBUF.Q | q_22_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_22_OBUF | 3486 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_22_OBUF.Q | q_22_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_22_OBUF.FBK | 3989 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_22_OBUF.Q | q_22_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_22_OBUF.SI | q_22_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_21_OBUF.FBK | 3988 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_21_OBUF.Q | q_21_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_22_OBUF.D1 | 3723 | ? | 0 | 4096 | q_22_OBUF | NULL | NULL | q_22_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_22_OBUF.D2 | 3724 | ? | 0 | 4096 | q_22_OBUF | NULL | NULL | q_22_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_22_OBUF.CLKF | 3725 | ? | 0 | 4096 | q_22_OBUF | NULL | NULL | q_22_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_21_OBUF.FBK
+
+SRFF_INSTANCE | q_22_OBUF.REG | q_22_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_22_OBUF.D | 3722 | ? | 0 | 0 | q_22_OBUF | NULL | NULL | q_22_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_22_OBUF.CLKF | 3725 | ? | 0 | 4096 | q_22_OBUF | NULL | NULL | q_22_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_21_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_22_OBUF.Q | 3726 | ? | 0 | 0 | q_22_OBUF | NULL | NULL | q_22_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_23_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_22_OBUF.FBK | 3989 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_22_OBUF.Q | q_22_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_23_OBUF$Q | 3487 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_23_OBUF.Q | q_23_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_23_OBUF | 3488 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_23_OBUF.Q | q_23_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_23_OBUF.FBK | 3990 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_23_OBUF.Q | q_23_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_23_OBUF.SI | q_23_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_22_OBUF.FBK | 3989 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_22_OBUF.Q | q_22_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_23_OBUF.D1 | 3728 | ? | 0 | 4096 | q_23_OBUF | NULL | NULL | q_23_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_23_OBUF.D2 | 3729 | ? | 0 | 4096 | q_23_OBUF | NULL | NULL | q_23_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_23_OBUF.CLKF | 3730 | ? | 0 | 4096 | q_23_OBUF | NULL | NULL | q_23_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_22_OBUF.FBK
+
+SRFF_INSTANCE | q_23_OBUF.REG | q_23_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_23_OBUF.D | 3727 | ? | 0 | 0 | q_23_OBUF | NULL | NULL | q_23_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_23_OBUF.CLKF | 3730 | ? | 0 | 4096 | q_23_OBUF | NULL | NULL | q_23_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_22_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_23_OBUF.Q | 3731 | ? | 0 | 0 | q_23_OBUF | NULL | NULL | q_23_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+OeInv | q_24_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2290095104 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_23_OBUF.FBK | 3990 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_23_OBUF.Q | q_23_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_24_OBUF$Q | 3489 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_24_OBUF.Q | q_24_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_24_OBUF | 3490 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_24_OBUF.Q | q_24_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | q_24_OBUF.SI | q_24_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_23_OBUF.FBK | 3990 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_23_OBUF.Q | q_23_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_24_OBUF.D1 | 3733 | ? | 0 | 4096 | q_24_OBUF | NULL | NULL | q_24_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_24_OBUF.D2 | 3734 | ? | 0 | 4096 | q_24_OBUF | NULL | NULL | q_24_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_24_OBUF.CLKF | 3735 | ? | 0 | 4096 | q_24_OBUF | NULL | NULL | q_24_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_23_OBUF.FBK
+
+SRFF_INSTANCE | q_24_OBUF.REG | q_24_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_24_OBUF.D | 3732 | ? | 0 | 0 | q_24_OBUF | NULL | NULL | q_24_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_24_OBUF.CLKF | 3735 | ? | 0 | 4096 | q_24_OBUF | NULL | NULL | q_24_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_23_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_24_OBUF.Q | 3736 | ? | 0 | 0 | q_24_OBUF | NULL | NULL | q_24_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_25_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<24>_PIN_BUF_ | 4035 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<24> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_25_OBUF$Q | 3491 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_25_OBUF.Q | q_25_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_25_OBUF | 3492 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_25_OBUF.Q | q_25_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_25_OBUF.FBK | 3991 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_25_OBUF.Q | q_25_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_25_OBUF.SI | q_25_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<24>_PIN_BUF_ | 4035 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<24> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_25_OBUF.D1 | 3738 | ? | 0 | 4096 | q_25_OBUF | NULL | NULL | q_25_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_25_OBUF.D2 | 3739 | ? | 0 | 4096 | q_25_OBUF | NULL | NULL | q_25_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_25_OBUF.CLKF | 3740 | ? | 0 | 4096 | q_25_OBUF | NULL | NULL | q_25_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<24>_PIN_BUF_
+
+SRFF_INSTANCE | q_25_OBUF.REG | q_25_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_25_OBUF.D | 3737 | ? | 0 | 0 | q_25_OBUF | NULL | NULL | q_25_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_25_OBUF.CLKF | 3740 | ? | 0 | 4096 | q_25_OBUF | NULL | NULL | q_25_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<24>_PIN_BUF_
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_25_OBUF.Q | 3741 | ? | 0 | 0 | q_25_OBUF | NULL | NULL | q_25_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_26_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_25_OBUF.FBK | 3991 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_25_OBUF.Q | q_25_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_26_OBUF$Q | 3493 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_26_OBUF.Q | q_26_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_26_OBUF | 3494 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_26_OBUF.Q | q_26_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_26_OBUF.FBK | 3992 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_26_OBUF.Q | q_26_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_26_OBUF.SI | q_26_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_25_OBUF.FBK | 3991 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_25_OBUF.Q | q_25_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_26_OBUF.D1 | 3743 | ? | 0 | 4096 | q_26_OBUF | NULL | NULL | q_26_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_26_OBUF.D2 | 3744 | ? | 0 | 4096 | q_26_OBUF | NULL | NULL | q_26_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_26_OBUF.CLKF | 3745 | ? | 0 | 4096 | q_26_OBUF | NULL | NULL | q_26_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_25_OBUF.FBK
+
+SRFF_INSTANCE | q_26_OBUF.REG | q_26_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_26_OBUF.D | 3742 | ? | 0 | 0 | q_26_OBUF | NULL | NULL | q_26_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_26_OBUF.CLKF | 3745 | ? | 0 | 4096 | q_26_OBUF | NULL | NULL | q_26_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_25_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_26_OBUF.Q | 3746 | ? | 0 | 0 | q_26_OBUF | NULL | NULL | q_26_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_27_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_26_OBUF.FBK | 3992 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_26_OBUF.Q | q_26_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_27_OBUF$Q | 3495 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_27_OBUF.Q | q_27_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_27_OBUF | 3496 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_27_OBUF.Q | q_27_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_27_OBUF.FBK | 3993 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_27_OBUF.Q | q_27_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_27_OBUF.SI | q_27_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_26_OBUF.FBK | 3992 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_26_OBUF.Q | q_26_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_27_OBUF.D1 | 3748 | ? | 0 | 4096 | q_27_OBUF | NULL | NULL | q_27_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_27_OBUF.D2 | 3749 | ? | 0 | 4096 | q_27_OBUF | NULL | NULL | q_27_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_27_OBUF.CLKF | 3750 | ? | 0 | 4096 | q_27_OBUF | NULL | NULL | q_27_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_26_OBUF.FBK
+
+SRFF_INSTANCE | q_27_OBUF.REG | q_27_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_27_OBUF.D | 3747 | ? | 0 | 0 | q_27_OBUF | NULL | NULL | q_27_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_27_OBUF.CLKF | 3750 | ? | 0 | 4096 | q_27_OBUF | NULL | NULL | q_27_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_26_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_27_OBUF.Q | 3751 | ? | 0 | 0 | q_27_OBUF | NULL | NULL | q_27_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_28_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_27_OBUF.FBK | 3993 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_27_OBUF.Q | q_27_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_28_OBUF$Q | 3497 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_28_OBUF.Q | q_28_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_28_OBUF | 3498 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_28_OBUF.Q | q_28_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_28_OBUF.FBK | 3994 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_28_OBUF.Q | q_28_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_28_OBUF.SI | q_28_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_27_OBUF.FBK | 3993 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_27_OBUF.Q | q_27_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_28_OBUF.D1 | 3753 | ? | 0 | 4096 | q_28_OBUF | NULL | NULL | q_28_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_28_OBUF.D2 | 3754 | ? | 0 | 4096 | q_28_OBUF | NULL | NULL | q_28_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_28_OBUF.CLKF | 3755 | ? | 0 | 4096 | q_28_OBUF | NULL | NULL | q_28_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_27_OBUF.FBK
+
+SRFF_INSTANCE | q_28_OBUF.REG | q_28_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_28_OBUF.D | 3752 | ? | 0 | 0 | q_28_OBUF | NULL | NULL | q_28_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_28_OBUF.CLKF | 3755 | ? | 0 | 4096 | q_28_OBUF | NULL | NULL | q_28_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_27_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_28_OBUF.Q | 3756 | ? | 0 | 0 | q_28_OBUF | NULL | NULL | q_28_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_29_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_28_OBUF.FBK | 3994 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_28_OBUF.Q | q_28_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_29_OBUF$Q | 3499 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_29_OBUF.Q | q_29_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_29_OBUF | 3500 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_29_OBUF.Q | q_29_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_29_OBUF.FBK | 3995 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_29_OBUF.Q | q_29_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_29_OBUF.SI | q_29_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_28_OBUF.FBK | 3994 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_28_OBUF.Q | q_28_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_29_OBUF.D1 | 3758 | ? | 0 | 4096 | q_29_OBUF | NULL | NULL | q_29_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_29_OBUF.D2 | 3759 | ? | 0 | 4096 | q_29_OBUF | NULL | NULL | q_29_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_29_OBUF.CLKF | 3760 | ? | 0 | 4096 | q_29_OBUF | NULL | NULL | q_29_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_28_OBUF.FBK
+
+SRFF_INSTANCE | q_29_OBUF.REG | q_29_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_29_OBUF.D | 3757 | ? | 0 | 0 | q_29_OBUF | NULL | NULL | q_29_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_29_OBUF.CLKF | 3760 | ? | 0 | 4096 | q_29_OBUF | NULL | NULL | q_29_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_28_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_29_OBUF.Q | 3761 | ? | 0 | 0 | q_29_OBUF | NULL | NULL | q_29_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+OeInv | q_2_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2290095104 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<1>_PIN_BUF_ | 4034 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_2_OBUF$Q | 3501 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_2_OBUF.Q | q_2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_2_OBUF | 3502 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_2_OBUF.Q | q_2_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | q_2_OBUF.SI | q_2_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<1>_PIN_BUF_ | 4034 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<1> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_2_OBUF.D1 | 3763 | ? | 0 | 4096 | q_2_OBUF | NULL | NULL | q_2_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_2_OBUF.D2 | 3764 | ? | 0 | 4096 | q_2_OBUF | NULL | NULL | q_2_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_2_OBUF.CLKF | 3765 | ? | 0 | 4096 | q_2_OBUF | NULL | NULL | q_2_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<1>_PIN_BUF_
+
+SRFF_INSTANCE | q_2_OBUF.REG | q_2_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_2_OBUF.D | 3762 | ? | 0 | 0 | q_2_OBUF | NULL | NULL | q_2_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_2_OBUF.CLKF | 3765 | ? | 0 | 4096 | q_2_OBUF | NULL | NULL | q_2_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<1>_PIN_BUF_
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_2_OBUF.Q | 3766 | ? | 0 | 0 | q_2_OBUF | NULL | NULL | q_2_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_30_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_29_OBUF.FBK | 3995 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_29_OBUF.Q | q_29_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_30_OBUF$Q | 3503 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_30_OBUF.Q | q_30_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_30_OBUF | 3504 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_30_OBUF.Q | q_30_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_30_OBUF.FBK | 3996 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_30_OBUF.Q | q_30_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_30_OBUF.SI | q_30_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_29_OBUF.FBK | 3995 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_29_OBUF.Q | q_29_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_30_OBUF.D1 | 3768 | ? | 0 | 4096 | q_30_OBUF | NULL | NULL | q_30_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_30_OBUF.D2 | 3769 | ? | 0 | 4096 | q_30_OBUF | NULL | NULL | q_30_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_30_OBUF.CLKF | 3770 | ? | 0 | 4096 | q_30_OBUF | NULL | NULL | q_30_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_29_OBUF.FBK
+
+SRFF_INSTANCE | q_30_OBUF.REG | q_30_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_30_OBUF.D | 3767 | ? | 0 | 0 | q_30_OBUF | NULL | NULL | q_30_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_30_OBUF.CLKF | 3770 | ? | 0 | 4096 | q_30_OBUF | NULL | NULL | q_30_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_29_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_30_OBUF.Q | 3771 | ? | 0 | 0 | q_30_OBUF | NULL | NULL | q_30_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_31_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_30_OBUF.FBK | 3996 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_30_OBUF.Q | q_30_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_31_OBUF$Q | 3505 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_31_OBUF.Q | q_31_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_31_OBUF | 3506 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_31_OBUF.Q | q_31_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_31_OBUF.FBK | 3997 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_31_OBUF.Q | q_31_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_31_OBUF.SI | q_31_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_30_OBUF.FBK | 3996 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_30_OBUF.Q | q_30_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_31_OBUF.D1 | 3773 | ? | 0 | 4096 | q_31_OBUF | NULL | NULL | q_31_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_31_OBUF.D2 | 3774 | ? | 0 | 4096 | q_31_OBUF | NULL | NULL | q_31_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_31_OBUF.CLKF | 3775 | ? | 0 | 4096 | q_31_OBUF | NULL | NULL | q_31_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_30_OBUF.FBK
+
+SRFF_INSTANCE | q_31_OBUF.REG | q_31_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_31_OBUF.D | 3772 | ? | 0 | 0 | q_31_OBUF | NULL | NULL | q_31_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_31_OBUF.CLKF | 3775 | ? | 0 | 4096 | q_31_OBUF | NULL | NULL | q_31_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_30_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_31_OBUF.Q | 3776 | ? | 0 | 0 | q_31_OBUF | NULL | NULL | q_31_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_32_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_31_OBUF.FBK | 3997 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_31_OBUF.Q | q_31_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_32_OBUF$Q | 3507 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_32_OBUF.Q | q_32_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_32_OBUF | 3508 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_32_OBUF.Q | q_32_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_32_OBUF.FBK | 3998 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_32_OBUF.Q | q_32_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_32_OBUF.SI | q_32_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_31_OBUF.FBK | 3997 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_31_OBUF.Q | q_31_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_32_OBUF.D1 | 3778 | ? | 0 | 4096 | q_32_OBUF | NULL | NULL | q_32_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_32_OBUF.D2 | 3779 | ? | 0 | 4096 | q_32_OBUF | NULL | NULL | q_32_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_32_OBUF.CLKF | 3780 | ? | 0 | 4096 | q_32_OBUF | NULL | NULL | q_32_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_31_OBUF.FBK
+
+SRFF_INSTANCE | q_32_OBUF.REG | q_32_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_32_OBUF.D | 3777 | ? | 0 | 0 | q_32_OBUF | NULL | NULL | q_32_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_32_OBUF.CLKF | 3780 | ? | 0 | 4096 | q_32_OBUF | NULL | NULL | q_32_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_31_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_32_OBUF.Q | 3781 | ? | 0 | 0 | q_32_OBUF | NULL | NULL | q_32_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_33_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_32_OBUF.FBK | 3998 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_32_OBUF.Q | q_32_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_33_OBUF$Q | 3509 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_33_OBUF.Q | q_33_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_33_OBUF | 3510 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_33_OBUF.Q | q_33_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_33_OBUF.FBK | 3999 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_33_OBUF.Q | q_33_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_33_OBUF.SI | q_33_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_32_OBUF.FBK | 3998 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_32_OBUF.Q | q_32_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_33_OBUF.D1 | 3783 | ? | 0 | 4096 | q_33_OBUF | NULL | NULL | q_33_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_33_OBUF.D2 | 3784 | ? | 0 | 4096 | q_33_OBUF | NULL | NULL | q_33_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_33_OBUF.CLKF | 3785 | ? | 0 | 4096 | q_33_OBUF | NULL | NULL | q_33_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_32_OBUF.FBK
+
+SRFF_INSTANCE | q_33_OBUF.REG | q_33_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_33_OBUF.D | 3782 | ? | 0 | 0 | q_33_OBUF | NULL | NULL | q_33_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_33_OBUF.CLKF | 3785 | ? | 0 | 4096 | q_33_OBUF | NULL | NULL | q_33_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_32_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_33_OBUF.Q | 3786 | ? | 0 | 0 | q_33_OBUF | NULL | NULL | q_33_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_34_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_33_OBUF.FBK | 3999 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_33_OBUF.Q | q_33_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_34_OBUF$Q | 3511 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_34_OBUF.Q | q_34_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_34_OBUF | 3512 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_34_OBUF.Q | q_34_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_34_OBUF.FBK | 4000 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_34_OBUF.Q | q_34_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_34_OBUF.SI | q_34_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_33_OBUF.FBK | 3999 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_33_OBUF.Q | q_33_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_34_OBUF.D1 | 3788 | ? | 0 | 4096 | q_34_OBUF | NULL | NULL | q_34_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_34_OBUF.D2 | 3789 | ? | 0 | 4096 | q_34_OBUF | NULL | NULL | q_34_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_34_OBUF.CLKF | 3790 | ? | 0 | 4096 | q_34_OBUF | NULL | NULL | q_34_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_33_OBUF.FBK
+
+SRFF_INSTANCE | q_34_OBUF.REG | q_34_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_34_OBUF.D | 3787 | ? | 0 | 0 | q_34_OBUF | NULL | NULL | q_34_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_34_OBUF.CLKF | 3790 | ? | 0 | 4096 | q_34_OBUF | NULL | NULL | q_34_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_33_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_34_OBUF.Q | 3791 | ? | 0 | 0 | q_34_OBUF | NULL | NULL | q_34_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_35_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_34_OBUF.FBK | 4000 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_34_OBUF.Q | q_34_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_35_OBUF$Q | 3513 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_35_OBUF.Q | q_35_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_35_OBUF | 3514 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_35_OBUF.Q | q_35_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_35_OBUF.FBK | 4001 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_35_OBUF.Q | q_35_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_35_OBUF.SI | q_35_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_34_OBUF.FBK | 4000 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_34_OBUF.Q | q_34_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_35_OBUF.D1 | 3793 | ? | 0 | 4096 | q_35_OBUF | NULL | NULL | q_35_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_35_OBUF.D2 | 3794 | ? | 0 | 4096 | q_35_OBUF | NULL | NULL | q_35_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_35_OBUF.CLKF | 3795 | ? | 0 | 4096 | q_35_OBUF | NULL | NULL | q_35_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_34_OBUF.FBK
+
+SRFF_INSTANCE | q_35_OBUF.REG | q_35_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_35_OBUF.D | 3792 | ? | 0 | 0 | q_35_OBUF | NULL | NULL | q_35_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_35_OBUF.CLKF | 3795 | ? | 0 | 4096 | q_35_OBUF | NULL | NULL | q_35_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_34_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_35_OBUF.Q | 3796 | ? | 0 | 0 | q_35_OBUF | NULL | NULL | q_35_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_36_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_35_OBUF.FBK | 4001 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_35_OBUF.Q | q_35_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_36_OBUF$Q | 3515 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_36_OBUF.Q | q_36_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_36_OBUF | 3516 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_36_OBUF.Q | q_36_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_36_OBUF.FBK | 4002 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_36_OBUF.Q | q_36_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_36_OBUF.SI | q_36_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_35_OBUF.FBK | 4001 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_35_OBUF.Q | q_35_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_36_OBUF.D1 | 3798 | ? | 0 | 4096 | q_36_OBUF | NULL | NULL | q_36_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_36_OBUF.D2 | 3799 | ? | 0 | 4096 | q_36_OBUF | NULL | NULL | q_36_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_36_OBUF.CLKF | 3800 | ? | 0 | 4096 | q_36_OBUF | NULL | NULL | q_36_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_35_OBUF.FBK
+
+SRFF_INSTANCE | q_36_OBUF.REG | q_36_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_36_OBUF.D | 3797 | ? | 0 | 0 | q_36_OBUF | NULL | NULL | q_36_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_36_OBUF.CLKF | 3800 | ? | 0 | 4096 | q_36_OBUF | NULL | NULL | q_36_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_35_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_36_OBUF.Q | 3801 | ? | 0 | 0 | q_36_OBUF | NULL | NULL | q_36_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_37_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_36_OBUF.FBK | 4002 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_36_OBUF.Q | q_36_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_37_OBUF$Q | 3517 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_37_OBUF.Q | q_37_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_37_OBUF | 3518 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_37_OBUF.Q | q_37_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_37_OBUF.FBK | 4003 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_37_OBUF.Q | q_37_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_37_OBUF.SI | q_37_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_36_OBUF.FBK | 4002 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_36_OBUF.Q | q_36_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_37_OBUF.D1 | 3803 | ? | 0 | 4096 | q_37_OBUF | NULL | NULL | q_37_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_37_OBUF.D2 | 3804 | ? | 0 | 4096 | q_37_OBUF | NULL | NULL | q_37_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_37_OBUF.CLKF | 3805 | ? | 0 | 4096 | q_37_OBUF | NULL | NULL | q_37_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_36_OBUF.FBK
+
+SRFF_INSTANCE | q_37_OBUF.REG | q_37_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_37_OBUF.D | 3802 | ? | 0 | 0 | q_37_OBUF | NULL | NULL | q_37_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_37_OBUF.CLKF | 3805 | ? | 0 | 4096 | q_37_OBUF | NULL | NULL | q_37_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_36_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_37_OBUF.Q | 3806 | ? | 0 | 0 | q_37_OBUF | NULL | NULL | q_37_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_38_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_37_OBUF.FBK | 4003 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_37_OBUF.Q | q_37_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_38_OBUF$Q | 3519 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_38_OBUF.Q | q_38_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_38_OBUF | 3520 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_38_OBUF.Q | q_38_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_38_OBUF.FBK | 4004 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_38_OBUF.Q | q_38_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_38_OBUF.SI | q_38_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_37_OBUF.FBK | 4003 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_37_OBUF.Q | q_37_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_38_OBUF.D1 | 3808 | ? | 0 | 4096 | q_38_OBUF | NULL | NULL | q_38_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_38_OBUF.D2 | 3809 | ? | 0 | 4096 | q_38_OBUF | NULL | NULL | q_38_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_38_OBUF.CLKF | 3810 | ? | 0 | 4096 | q_38_OBUF | NULL | NULL | q_38_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_37_OBUF.FBK
+
+SRFF_INSTANCE | q_38_OBUF.REG | q_38_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_38_OBUF.D | 3807 | ? | 0 | 0 | q_38_OBUF | NULL | NULL | q_38_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_38_OBUF.CLKF | 3810 | ? | 0 | 4096 | q_38_OBUF | NULL | NULL | q_38_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_37_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_38_OBUF.Q | 3811 | ? | 0 | 0 | q_38_OBUF | NULL | NULL | q_38_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+OeInv | q_39_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2290095104 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_38_OBUF.FBK | 4004 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_38_OBUF.Q | q_38_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_39_OBUF$Q | 3521 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_39_OBUF.Q | q_39_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_39_OBUF | 3522 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_39_OBUF.Q | q_39_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | q_39_OBUF.SI | q_39_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_38_OBUF.FBK | 4004 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_38_OBUF.Q | q_38_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_39_OBUF.D1 | 3813 | ? | 0 | 4096 | q_39_OBUF | NULL | NULL | q_39_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_39_OBUF.D2 | 3814 | ? | 0 | 4096 | q_39_OBUF | NULL | NULL | q_39_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_39_OBUF.CLKF | 3815 | ? | 0 | 4096 | q_39_OBUF | NULL | NULL | q_39_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_38_OBUF.FBK
+
+SRFF_INSTANCE | q_39_OBUF.REG | q_39_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_39_OBUF.D | 3812 | ? | 0 | 0 | q_39_OBUF | NULL | NULL | q_39_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_39_OBUF.CLKF | 3815 | ? | 0 | 4096 | q_39_OBUF | NULL | NULL | q_39_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_38_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_39_OBUF.Q | 3816 | ? | 0 | 0 | q_39_OBUF | NULL | NULL | q_39_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_3_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<2>_PIN_BUF_ | 4036 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<2> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_3_OBUF$Q | 3523 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_3_OBUF.Q | q_3_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_3_OBUF | 3524 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_3_OBUF.Q | q_3_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_3_OBUF.FBK | 4014 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_3_OBUF.Q | q_3_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_3_OBUF.SI | q_3_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<2>_PIN_BUF_ | 4036 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<2> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_3_OBUF.D1 | 3818 | ? | 0 | 4096 | q_3_OBUF | NULL | NULL | q_3_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_3_OBUF.D2 | 3819 | ? | 0 | 4096 | q_3_OBUF | NULL | NULL | q_3_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_3_OBUF.CLKF | 3820 | ? | 0 | 4096 | q_3_OBUF | NULL | NULL | q_3_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<2>_PIN_BUF_
+
+SRFF_INSTANCE | q_3_OBUF.REG | q_3_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_3_OBUF.D | 3817 | ? | 0 | 0 | q_3_OBUF | NULL | NULL | q_3_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_3_OBUF.CLKF | 3820 | ? | 0 | 4096 | q_3_OBUF | NULL | NULL | q_3_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<2>_PIN_BUF_
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_3_OBUF.Q | 3821 | ? | 0 | 0 | q_3_OBUF | NULL | NULL | q_3_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_40_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<39>_PIN_BUF_ | 4037 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<39> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_40_OBUF$Q | 3525 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_40_OBUF.Q | q_40_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_40_OBUF | 3526 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_40_OBUF.Q | q_40_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_40_OBUF.FBK | 4005 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_40_OBUF.Q | q_40_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_40_OBUF.SI | q_40_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<39>_PIN_BUF_ | 4037 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<39> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_40_OBUF.D1 | 3823 | ? | 0 | 4096 | q_40_OBUF | NULL | NULL | q_40_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_40_OBUF.D2 | 3824 | ? | 0 | 4096 | q_40_OBUF | NULL | NULL | q_40_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_40_OBUF.CLKF | 3825 | ? | 0 | 4096 | q_40_OBUF | NULL | NULL | q_40_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<39>_PIN_BUF_
+
+SRFF_INSTANCE | q_40_OBUF.REG | q_40_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_40_OBUF.D | 3822 | ? | 0 | 0 | q_40_OBUF | NULL | NULL | q_40_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_40_OBUF.CLKF | 3825 | ? | 0 | 4096 | q_40_OBUF | NULL | NULL | q_40_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<39>_PIN_BUF_
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_40_OBUF.Q | 3826 | ? | 0 | 0 | q_40_OBUF | NULL | NULL | q_40_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_41_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_40_OBUF.FBK | 4005 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_40_OBUF.Q | q_40_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_41_OBUF$Q | 3527 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_41_OBUF.Q | q_41_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_41_OBUF | 3528 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_41_OBUF.Q | q_41_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_41_OBUF.FBK | 4006 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_41_OBUF.Q | q_41_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_41_OBUF.SI | q_41_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_40_OBUF.FBK | 4005 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_40_OBUF.Q | q_40_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_41_OBUF.D1 | 3828 | ? | 0 | 4096 | q_41_OBUF | NULL | NULL | q_41_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_41_OBUF.D2 | 3829 | ? | 0 | 4096 | q_41_OBUF | NULL | NULL | q_41_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_41_OBUF.CLKF | 3830 | ? | 0 | 4096 | q_41_OBUF | NULL | NULL | q_41_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_40_OBUF.FBK
+
+SRFF_INSTANCE | q_41_OBUF.REG | q_41_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_41_OBUF.D | 3827 | ? | 0 | 0 | q_41_OBUF | NULL | NULL | q_41_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_41_OBUF.CLKF | 3830 | ? | 0 | 4096 | q_41_OBUF | NULL | NULL | q_41_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_40_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_41_OBUF.Q | 3831 | ? | 0 | 0 | q_41_OBUF | NULL | NULL | q_41_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_42_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_41_OBUF.FBK | 4006 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_41_OBUF.Q | q_41_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_42_OBUF$Q | 3529 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_42_OBUF.Q | q_42_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_42_OBUF | 3530 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_42_OBUF.Q | q_42_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_42_OBUF.FBK | 4007 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_42_OBUF.Q | q_42_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_42_OBUF.SI | q_42_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_41_OBUF.FBK | 4006 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_41_OBUF.Q | q_41_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_42_OBUF.D1 | 3833 | ? | 0 | 4096 | q_42_OBUF | NULL | NULL | q_42_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_42_OBUF.D2 | 3834 | ? | 0 | 4096 | q_42_OBUF | NULL | NULL | q_42_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_42_OBUF.CLKF | 3835 | ? | 0 | 4096 | q_42_OBUF | NULL | NULL | q_42_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_41_OBUF.FBK
+
+SRFF_INSTANCE | q_42_OBUF.REG | q_42_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_42_OBUF.D | 3832 | ? | 0 | 0 | q_42_OBUF | NULL | NULL | q_42_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_42_OBUF.CLKF | 3835 | ? | 0 | 4096 | q_42_OBUF | NULL | NULL | q_42_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_41_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_42_OBUF.Q | 3836 | ? | 0 | 0 | q_42_OBUF | NULL | NULL | q_42_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_43_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_42_OBUF.FBK | 4007 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_42_OBUF.Q | q_42_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_43_OBUF$Q | 3531 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_43_OBUF.Q | q_43_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_43_OBUF | 3532 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_43_OBUF.Q | q_43_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_43_OBUF.FBK | 4008 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_43_OBUF.Q | q_43_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_43_OBUF.SI | q_43_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_42_OBUF.FBK | 4007 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_42_OBUF.Q | q_42_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_43_OBUF.D1 | 3838 | ? | 0 | 4096 | q_43_OBUF | NULL | NULL | q_43_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_43_OBUF.D2 | 3839 | ? | 0 | 4096 | q_43_OBUF | NULL | NULL | q_43_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_43_OBUF.CLKF | 3840 | ? | 0 | 4096 | q_43_OBUF | NULL | NULL | q_43_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_42_OBUF.FBK
+
+SRFF_INSTANCE | q_43_OBUF.REG | q_43_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_43_OBUF.D | 3837 | ? | 0 | 0 | q_43_OBUF | NULL | NULL | q_43_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_43_OBUF.CLKF | 3840 | ? | 0 | 4096 | q_43_OBUF | NULL | NULL | q_43_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_42_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_43_OBUF.Q | 3841 | ? | 0 | 0 | q_43_OBUF | NULL | NULL | q_43_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_44_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_43_OBUF.FBK | 4008 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_43_OBUF.Q | q_43_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_44_OBUF$Q | 3533 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_44_OBUF.Q | q_44_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_44_OBUF | 3534 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_44_OBUF.Q | q_44_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_44_OBUF.FBK | 4009 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_44_OBUF.Q | q_44_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_44_OBUF.SI | q_44_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_43_OBUF.FBK | 4008 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_43_OBUF.Q | q_43_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_44_OBUF.D1 | 3843 | ? | 0 | 4096 | q_44_OBUF | NULL | NULL | q_44_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_44_OBUF.D2 | 3844 | ? | 0 | 4096 | q_44_OBUF | NULL | NULL | q_44_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_44_OBUF.CLKF | 3845 | ? | 0 | 4096 | q_44_OBUF | NULL | NULL | q_44_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_43_OBUF.FBK
+
+SRFF_INSTANCE | q_44_OBUF.REG | q_44_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_44_OBUF.D | 3842 | ? | 0 | 0 | q_44_OBUF | NULL | NULL | q_44_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_44_OBUF.CLKF | 3845 | ? | 0 | 4096 | q_44_OBUF | NULL | NULL | q_44_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_43_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_44_OBUF.Q | 3846 | ? | 0 | 0 | q_44_OBUF | NULL | NULL | q_44_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_45_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_44_OBUF.FBK | 4009 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_44_OBUF.Q | q_44_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_45_OBUF$Q | 3535 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_45_OBUF.Q | q_45_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_45_OBUF | 3536 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_45_OBUF.Q | q_45_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_45_OBUF.FBK | 4010 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_45_OBUF.Q | q_45_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_45_OBUF.SI | q_45_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_44_OBUF.FBK | 4009 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_44_OBUF.Q | q_44_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_45_OBUF.D1 | 3848 | ? | 0 | 4096 | q_45_OBUF | NULL | NULL | q_45_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_45_OBUF.D2 | 3849 | ? | 0 | 4096 | q_45_OBUF | NULL | NULL | q_45_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_45_OBUF.CLKF | 3850 | ? | 0 | 4096 | q_45_OBUF | NULL | NULL | q_45_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_44_OBUF.FBK
+
+SRFF_INSTANCE | q_45_OBUF.REG | q_45_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_45_OBUF.D | 3847 | ? | 0 | 0 | q_45_OBUF | NULL | NULL | q_45_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_45_OBUF.CLKF | 3850 | ? | 0 | 4096 | q_45_OBUF | NULL | NULL | q_45_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_44_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_45_OBUF.Q | 3851 | ? | 0 | 0 | q_45_OBUF | NULL | NULL | q_45_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_46_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_45_OBUF.FBK | 4010 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_45_OBUF.Q | q_45_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_46_OBUF$Q | 3537 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_46_OBUF.Q | q_46_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_46_OBUF | 3538 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_46_OBUF.Q | q_46_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_46_OBUF.FBK | 4011 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_46_OBUF.Q | q_46_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_46_OBUF.SI | q_46_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_45_OBUF.FBK | 4010 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_45_OBUF.Q | q_45_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_46_OBUF.D1 | 3853 | ? | 0 | 4096 | q_46_OBUF | NULL | NULL | q_46_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_46_OBUF.D2 | 3854 | ? | 0 | 4096 | q_46_OBUF | NULL | NULL | q_46_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_46_OBUF.CLKF | 3855 | ? | 0 | 4096 | q_46_OBUF | NULL | NULL | q_46_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_45_OBUF.FBK
+
+SRFF_INSTANCE | q_46_OBUF.REG | q_46_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_46_OBUF.D | 3852 | ? | 0 | 0 | q_46_OBUF | NULL | NULL | q_46_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_46_OBUF.CLKF | 3855 | ? | 0 | 4096 | q_46_OBUF | NULL | NULL | q_46_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_45_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_46_OBUF.Q | 3856 | ? | 0 | 0 | q_46_OBUF | NULL | NULL | q_46_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_47_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_46_OBUF.FBK | 4011 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_46_OBUF.Q | q_46_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_47_OBUF$Q | 3539 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_47_OBUF.Q | q_47_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_47_OBUF | 3540 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_47_OBUF.Q | q_47_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_47_OBUF.FBK | 4012 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_47_OBUF.Q | q_47_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_47_OBUF.SI | q_47_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_46_OBUF.FBK | 4011 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_46_OBUF.Q | q_46_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_47_OBUF.D1 | 3858 | ? | 0 | 4096 | q_47_OBUF | NULL | NULL | q_47_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_47_OBUF.D2 | 3859 | ? | 0 | 4096 | q_47_OBUF | NULL | NULL | q_47_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_47_OBUF.CLKF | 3860 | ? | 0 | 4096 | q_47_OBUF | NULL | NULL | q_47_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_46_OBUF.FBK
+
+SRFF_INSTANCE | q_47_OBUF.REG | q_47_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_47_OBUF.D | 3857 | ? | 0 | 0 | q_47_OBUF | NULL | NULL | q_47_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_47_OBUF.CLKF | 3860 | ? | 0 | 4096 | q_47_OBUF | NULL | NULL | q_47_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_46_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_47_OBUF.Q | 3861 | ? | 0 | 0 | q_47_OBUF | NULL | NULL | q_47_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_48_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_47_OBUF.FBK | 4012 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_47_OBUF.Q | q_47_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_48_OBUF$Q | 3541 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_48_OBUF.Q | q_48_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_48_OBUF | 3542 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_48_OBUF.Q | q_48_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_48_OBUF.FBK | 4013 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_48_OBUF.Q | q_48_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_48_OBUF.SI | q_48_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_47_OBUF.FBK | 4012 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_47_OBUF.Q | q_47_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_48_OBUF.D1 | 3863 | ? | 0 | 4096 | q_48_OBUF | NULL | NULL | q_48_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_48_OBUF.D2 | 3864 | ? | 0 | 4096 | q_48_OBUF | NULL | NULL | q_48_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_48_OBUF.CLKF | 3865 | ? | 0 | 4096 | q_48_OBUF | NULL | NULL | q_48_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_47_OBUF.FBK
+
+SRFF_INSTANCE | q_48_OBUF.REG | q_48_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_48_OBUF.D | 3862 | ? | 0 | 0 | q_48_OBUF | NULL | NULL | q_48_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_48_OBUF.CLKF | 3865 | ? | 0 | 4096 | q_48_OBUF | NULL | NULL | q_48_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_47_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_48_OBUF.Q | 3866 | ? | 0 | 0 | q_48_OBUF | NULL | NULL | q_48_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_49_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_48_OBUF.FBK | 4013 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_48_OBUF.Q | q_48_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_49_OBUF$Q | 3543 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_49_OBUF.Q | q_49_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_49_OBUF | 3544 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_49_OBUF.Q | q_49_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_49_OBUF.FBK | 4015 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_49_OBUF.Q | q_49_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_49_OBUF.SI | q_49_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_48_OBUF.FBK | 4013 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_48_OBUF.Q | q_48_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_49_OBUF.D1 | 3868 | ? | 0 | 4096 | q_49_OBUF | NULL | NULL | q_49_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_49_OBUF.D2 | 3869 | ? | 0 | 4096 | q_49_OBUF | NULL | NULL | q_49_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_49_OBUF.CLKF | 3870 | ? | 0 | 4096 | q_49_OBUF | NULL | NULL | q_49_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_48_OBUF.FBK
+
+SRFF_INSTANCE | q_49_OBUF.REG | q_49_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_49_OBUF.D | 3867 | ? | 0 | 0 | q_49_OBUF | NULL | NULL | q_49_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_49_OBUF.CLKF | 3870 | ? | 0 | 4096 | q_49_OBUF | NULL | NULL | q_49_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_48_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_49_OBUF.Q | 3871 | ? | 0 | 0 | q_49_OBUF | NULL | NULL | q_49_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+OeInv | q_4_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2290095104 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_3_OBUF.FBK | 4014 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_3_OBUF.Q | q_3_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_4_OBUF$Q | 3545 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_4_OBUF.Q | q_4_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_4_OBUF | 3546 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_4_OBUF.Q | q_4_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | q_4_OBUF.SI | q_4_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_3_OBUF.FBK | 4014 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_3_OBUF.Q | q_3_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_4_OBUF.D1 | 3873 | ? | 0 | 4096 | q_4_OBUF | NULL | NULL | q_4_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_4_OBUF.D2 | 3874 | ? | 0 | 4096 | q_4_OBUF | NULL | NULL | q_4_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_4_OBUF.CLKF | 3875 | ? | 0 | 4096 | q_4_OBUF | NULL | NULL | q_4_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_3_OBUF.FBK
+
+SRFF_INSTANCE | q_4_OBUF.REG | q_4_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_4_OBUF.D | 3872 | ? | 0 | 0 | q_4_OBUF | NULL | NULL | q_4_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_4_OBUF.CLKF | 3875 | ? | 0 | 4096 | q_4_OBUF | NULL | NULL | q_4_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_3_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_4_OBUF.Q | 3876 | ? | 0 | 0 | q_4_OBUF | NULL | NULL | q_4_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_50_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_49_OBUF.FBK | 4015 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_49_OBUF.Q | q_49_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_50_OBUF$Q | 3547 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_50_OBUF.Q | q_50_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_50_OBUF | 3548 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_50_OBUF.Q | q_50_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_50_OBUF.FBK | 4016 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_50_OBUF.Q | q_50_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_50_OBUF.SI | q_50_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_49_OBUF.FBK | 4015 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_49_OBUF.Q | q_49_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_50_OBUF.D1 | 3878 | ? | 0 | 4096 | q_50_OBUF | NULL | NULL | q_50_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_50_OBUF.D2 | 3879 | ? | 0 | 4096 | q_50_OBUF | NULL | NULL | q_50_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_50_OBUF.CLKF | 3880 | ? | 0 | 4096 | q_50_OBUF | NULL | NULL | q_50_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_49_OBUF.FBK
+
+SRFF_INSTANCE | q_50_OBUF.REG | q_50_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_50_OBUF.D | 3877 | ? | 0 | 0 | q_50_OBUF | NULL | NULL | q_50_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_50_OBUF.CLKF | 3880 | ? | 0 | 4096 | q_50_OBUF | NULL | NULL | q_50_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_49_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_50_OBUF.Q | 3881 | ? | 0 | 0 | q_50_OBUF | NULL | NULL | q_50_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_51_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_50_OBUF.FBK | 4016 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_50_OBUF.Q | q_50_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_51_OBUF$Q | 3549 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_51_OBUF.Q | q_51_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_51_OBUF | 3550 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_51_OBUF.Q | q_51_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_51_OBUF.FBK | 4017 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_51_OBUF.Q | q_51_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_51_OBUF.SI | q_51_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_50_OBUF.FBK | 4016 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_50_OBUF.Q | q_50_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_51_OBUF.D1 | 3883 | ? | 0 | 4096 | q_51_OBUF | NULL | NULL | q_51_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_51_OBUF.D2 | 3884 | ? | 0 | 4096 | q_51_OBUF | NULL | NULL | q_51_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_51_OBUF.CLKF | 3885 | ? | 0 | 4096 | q_51_OBUF | NULL | NULL | q_51_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_50_OBUF.FBK
+
+SRFF_INSTANCE | q_51_OBUF.REG | q_51_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_51_OBUF.D | 3882 | ? | 0 | 0 | q_51_OBUF | NULL | NULL | q_51_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_51_OBUF.CLKF | 3885 | ? | 0 | 4096 | q_51_OBUF | NULL | NULL | q_51_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_50_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_51_OBUF.Q | 3886 | ? | 0 | 0 | q_51_OBUF | NULL | NULL | q_51_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_52_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_51_OBUF.FBK | 4017 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_51_OBUF.Q | q_51_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_52_OBUF$Q | 3551 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_52_OBUF.Q | q_52_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_52_OBUF | 3552 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_52_OBUF.Q | q_52_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_52_OBUF.FBK | 4018 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_52_OBUF.Q | q_52_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_52_OBUF.SI | q_52_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_51_OBUF.FBK | 4017 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_51_OBUF.Q | q_51_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_52_OBUF.D1 | 3888 | ? | 0 | 4096 | q_52_OBUF | NULL | NULL | q_52_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_52_OBUF.D2 | 3889 | ? | 0 | 4096 | q_52_OBUF | NULL | NULL | q_52_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_52_OBUF.CLKF | 3890 | ? | 0 | 4096 | q_52_OBUF | NULL | NULL | q_52_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_51_OBUF.FBK
+
+SRFF_INSTANCE | q_52_OBUF.REG | q_52_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_52_OBUF.D | 3887 | ? | 0 | 0 | q_52_OBUF | NULL | NULL | q_52_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_52_OBUF.CLKF | 3890 | ? | 0 | 4096 | q_52_OBUF | NULL | NULL | q_52_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_51_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_52_OBUF.Q | 3891 | ? | 0 | 0 | q_52_OBUF | NULL | NULL | q_52_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+OeInv | q_53_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2290095104 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_52_OBUF.FBK | 4018 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_52_OBUF.Q | q_52_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_53_OBUF$Q | 3553 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_53_OBUF.Q | q_53_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_53_OBUF | 3554 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_53_OBUF.Q | q_53_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | q_53_OBUF.SI | q_53_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_52_OBUF.FBK | 4018 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_52_OBUF.Q | q_52_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_53_OBUF.D1 | 3893 | ? | 0 | 4096 | q_53_OBUF | NULL | NULL | q_53_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_53_OBUF.D2 | 3894 | ? | 0 | 4096 | q_53_OBUF | NULL | NULL | q_53_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_53_OBUF.CLKF | 3895 | ? | 0 | 4096 | q_53_OBUF | NULL | NULL | q_53_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_52_OBUF.FBK
+
+SRFF_INSTANCE | q_53_OBUF.REG | q_53_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_53_OBUF.D | 3892 | ? | 0 | 0 | q_53_OBUF | NULL | NULL | q_53_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_53_OBUF.CLKF | 3895 | ? | 0 | 4096 | q_53_OBUF | NULL | NULL | q_53_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_52_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_53_OBUF.Q | 3896 | ? | 0 | 0 | q_53_OBUF | NULL | NULL | q_53_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_54_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<53>_PIN_BUF_ | 4039 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<53> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_54_OBUF$Q | 3555 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_54_OBUF.Q | q_54_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_54_OBUF | 3556 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_54_OBUF.Q | q_54_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_54_OBUF.FBK | 4019 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_54_OBUF.Q | q_54_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_54_OBUF.SI | q_54_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<53>_PIN_BUF_ | 4039 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<53> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_54_OBUF.D1 | 3898 | ? | 0 | 4096 | q_54_OBUF | NULL | NULL | q_54_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_54_OBUF.D2 | 3899 | ? | 0 | 4096 | q_54_OBUF | NULL | NULL | q_54_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_54_OBUF.CLKF | 3900 | ? | 0 | 4096 | q_54_OBUF | NULL | NULL | q_54_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<53>_PIN_BUF_
+
+SRFF_INSTANCE | q_54_OBUF.REG | q_54_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_54_OBUF.D | 3897 | ? | 0 | 0 | q_54_OBUF | NULL | NULL | q_54_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_54_OBUF.CLKF | 3900 | ? | 0 | 4096 | q_54_OBUF | NULL | NULL | q_54_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<53>_PIN_BUF_
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_54_OBUF.Q | 3901 | ? | 0 | 0 | q_54_OBUF | NULL | NULL | q_54_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_55_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_54_OBUF.FBK | 4019 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_54_OBUF.Q | q_54_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_55_OBUF$Q | 3557 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_55_OBUF.Q | q_55_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_55_OBUF | 3558 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_55_OBUF.Q | q_55_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_55_OBUF.FBK | 4020 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_55_OBUF.Q | q_55_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_55_OBUF.SI | q_55_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_54_OBUF.FBK | 4019 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_54_OBUF.Q | q_54_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_55_OBUF.D1 | 3903 | ? | 0 | 4096 | q_55_OBUF | NULL | NULL | q_55_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_55_OBUF.D2 | 3904 | ? | 0 | 4096 | q_55_OBUF | NULL | NULL | q_55_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_55_OBUF.CLKF | 3905 | ? | 0 | 4096 | q_55_OBUF | NULL | NULL | q_55_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_54_OBUF.FBK
+
+SRFF_INSTANCE | q_55_OBUF.REG | q_55_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_55_OBUF.D | 3902 | ? | 0 | 0 | q_55_OBUF | NULL | NULL | q_55_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_55_OBUF.CLKF | 3905 | ? | 0 | 4096 | q_55_OBUF | NULL | NULL | q_55_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_54_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_55_OBUF.Q | 3906 | ? | 0 | 0 | q_55_OBUF | NULL | NULL | q_55_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_56_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_55_OBUF.FBK | 4020 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_55_OBUF.Q | q_55_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_56_OBUF$Q | 3559 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_56_OBUF.Q | q_56_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_56_OBUF | 3560 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_56_OBUF.Q | q_56_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_56_OBUF.FBK | 4021 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_56_OBUF.Q | q_56_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_56_OBUF.SI | q_56_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_55_OBUF.FBK | 4020 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_55_OBUF.Q | q_55_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_56_OBUF.D1 | 3908 | ? | 0 | 4096 | q_56_OBUF | NULL | NULL | q_56_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_56_OBUF.D2 | 3909 | ? | 0 | 4096 | q_56_OBUF | NULL | NULL | q_56_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_56_OBUF.CLKF | 3910 | ? | 0 | 4096 | q_56_OBUF | NULL | NULL | q_56_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_55_OBUF.FBK
+
+SRFF_INSTANCE | q_56_OBUF.REG | q_56_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_56_OBUF.D | 3907 | ? | 0 | 0 | q_56_OBUF | NULL | NULL | q_56_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_56_OBUF.CLKF | 3910 | ? | 0 | 4096 | q_56_OBUF | NULL | NULL | q_56_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_55_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_56_OBUF.Q | 3911 | ? | 0 | 0 | q_56_OBUF | NULL | NULL | q_56_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_57_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_56_OBUF.FBK | 4021 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_56_OBUF.Q | q_56_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_57_OBUF$Q | 3561 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_57_OBUF.Q | q_57_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_57_OBUF | 3562 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_57_OBUF.Q | q_57_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_57_OBUF.FBK | 4022 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_57_OBUF.Q | q_57_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_57_OBUF.SI | q_57_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_56_OBUF.FBK | 4021 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_56_OBUF.Q | q_56_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_57_OBUF.D1 | 3913 | ? | 0 | 4096 | q_57_OBUF | NULL | NULL | q_57_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_57_OBUF.D2 | 3914 | ? | 0 | 4096 | q_57_OBUF | NULL | NULL | q_57_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_57_OBUF.CLKF | 3915 | ? | 0 | 4096 | q_57_OBUF | NULL | NULL | q_57_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_56_OBUF.FBK
+
+SRFF_INSTANCE | q_57_OBUF.REG | q_57_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_57_OBUF.D | 3912 | ? | 0 | 0 | q_57_OBUF | NULL | NULL | q_57_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_57_OBUF.CLKF | 3915 | ? | 0 | 4096 | q_57_OBUF | NULL | NULL | q_57_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_56_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_57_OBUF.Q | 3916 | ? | 0 | 0 | q_57_OBUF | NULL | NULL | q_57_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_58_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_57_OBUF.FBK | 4022 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_57_OBUF.Q | q_57_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_58_OBUF$Q | 3563 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_58_OBUF.Q | q_58_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_58_OBUF | 3564 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_58_OBUF.Q | q_58_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_58_OBUF.FBK | 4023 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_58_OBUF.Q | q_58_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_58_OBUF.SI | q_58_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_57_OBUF.FBK | 4022 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_57_OBUF.Q | q_57_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_58_OBUF.D1 | 3918 | ? | 0 | 4096 | q_58_OBUF | NULL | NULL | q_58_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_58_OBUF.D2 | 3919 | ? | 0 | 4096 | q_58_OBUF | NULL | NULL | q_58_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_58_OBUF.CLKF | 3920 | ? | 0 | 4096 | q_58_OBUF | NULL | NULL | q_58_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_57_OBUF.FBK
+
+SRFF_INSTANCE | q_58_OBUF.REG | q_58_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_58_OBUF.D | 3917 | ? | 0 | 0 | q_58_OBUF | NULL | NULL | q_58_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_58_OBUF.CLKF | 3920 | ? | 0 | 4096 | q_58_OBUF | NULL | NULL | q_58_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_57_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_58_OBUF.Q | 3921 | ? | 0 | 0 | q_58_OBUF | NULL | NULL | q_58_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_59_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_58_OBUF.FBK | 4023 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_58_OBUF.Q | q_58_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_59_OBUF$Q | 3565 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_59_OBUF.Q | q_59_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_59_OBUF | 3566 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_59_OBUF.Q | q_59_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_59_OBUF.FBK | 4024 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_59_OBUF.Q | q_59_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_59_OBUF.SI | q_59_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_58_OBUF.FBK | 4023 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_58_OBUF.Q | q_58_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_59_OBUF.D1 | 3923 | ? | 0 | 4096 | q_59_OBUF | NULL | NULL | q_59_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_59_OBUF.D2 | 3924 | ? | 0 | 4096 | q_59_OBUF | NULL | NULL | q_59_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_59_OBUF.CLKF | 3925 | ? | 0 | 4096 | q_59_OBUF | NULL | NULL | q_59_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_58_OBUF.FBK
+
+SRFF_INSTANCE | q_59_OBUF.REG | q_59_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_59_OBUF.D | 3922 | ? | 0 | 0 | q_59_OBUF | NULL | NULL | q_59_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_59_OBUF.CLKF | 3925 | ? | 0 | 4096 | q_59_OBUF | NULL | NULL | q_59_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_58_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_59_OBUF.Q | 3926 | ? | 0 | 0 | q_59_OBUF | NULL | NULL | q_59_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_5_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<4>_PIN_BUF_ | 4038 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<4> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_5_OBUF$Q | 3567 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_5_OBUF.Q | q_5_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_5_OBUF | 3568 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_5_OBUF.Q | q_5_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_5_OBUF.FBK | 4028 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_5_OBUF.Q | q_5_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_5_OBUF.SI | q_5_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q<4>_PIN_BUF_ | 4038 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<4> | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_5_OBUF.D1 | 3928 | ? | 0 | 4096 | q_5_OBUF | NULL | NULL | q_5_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_5_OBUF.D2 | 3929 | ? | 0 | 4096 | q_5_OBUF | NULL | NULL | q_5_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_5_OBUF.CLKF | 3930 | ? | 0 | 4096 | q_5_OBUF | NULL | NULL | q_5_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<4>_PIN_BUF_
+
+SRFF_INSTANCE | q_5_OBUF.REG | q_5_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_5_OBUF.D | 3927 | ? | 0 | 0 | q_5_OBUF | NULL | NULL | q_5_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_5_OBUF.CLKF | 3930 | ? | 0 | 4096 | q_5_OBUF | NULL | NULL | q_5_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q<4>_PIN_BUF_
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_5_OBUF.Q | 3931 | ? | 0 | 0 | q_5_OBUF | NULL | NULL | q_5_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_60_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_59_OBUF.FBK | 4024 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_59_OBUF.Q | q_59_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_60_OBUF$Q | 3569 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_60_OBUF.Q | q_60_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_60_OBUF | 3570 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_60_OBUF.Q | q_60_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_60_OBUF.FBK | 4025 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_60_OBUF.Q | q_60_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_60_OBUF.SI | q_60_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_59_OBUF.FBK | 4024 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_59_OBUF.Q | q_59_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_60_OBUF.D1 | 3933 | ? | 0 | 4096 | q_60_OBUF | NULL | NULL | q_60_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_60_OBUF.D2 | 3934 | ? | 0 | 4096 | q_60_OBUF | NULL | NULL | q_60_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_60_OBUF.CLKF | 3935 | ? | 0 | 4096 | q_60_OBUF | NULL | NULL | q_60_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_59_OBUF.FBK
+
+SRFF_INSTANCE | q_60_OBUF.REG | q_60_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_60_OBUF.D | 3932 | ? | 0 | 0 | q_60_OBUF | NULL | NULL | q_60_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_60_OBUF.CLKF | 3935 | ? | 0 | 4096 | q_60_OBUF | NULL | NULL | q_60_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_59_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_60_OBUF.Q | 3936 | ? | 0 | 0 | q_60_OBUF | NULL | NULL | q_60_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_61_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_60_OBUF.FBK | 4025 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_60_OBUF.Q | q_60_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_61_OBUF$Q | 3571 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_61_OBUF.Q | q_61_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_61_OBUF | 3572 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_61_OBUF.Q | q_61_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_61_OBUF.FBK | 4026 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_61_OBUF.Q | q_61_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_61_OBUF.SI | q_61_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_60_OBUF.FBK | 4025 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_60_OBUF.Q | q_60_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_61_OBUF.D1 | 3938 | ? | 0 | 4096 | q_61_OBUF | NULL | NULL | q_61_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_61_OBUF.D2 | 3939 | ? | 0 | 4096 | q_61_OBUF | NULL | NULL | q_61_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_61_OBUF.CLKF | 3940 | ? | 0 | 4096 | q_61_OBUF | NULL | NULL | q_61_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_60_OBUF.FBK
+
+SRFF_INSTANCE | q_61_OBUF.REG | q_61_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_61_OBUF.D | 3937 | ? | 0 | 0 | q_61_OBUF | NULL | NULL | q_61_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_61_OBUF.CLKF | 3940 | ? | 0 | 4096 | q_61_OBUF | NULL | NULL | q_61_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_60_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_61_OBUF.Q | 3941 | ? | 0 | 0 | q_61_OBUF | NULL | NULL | q_61_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_62_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_61_OBUF.FBK | 4026 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_61_OBUF.Q | q_61_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_62_OBUF$Q | 3573 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_62_OBUF.Q | q_62_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_62_OBUF | 3574 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_62_OBUF.Q | q_62_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_62_OBUF.FBK | 4027 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_62_OBUF.Q | q_62_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_62_OBUF.SI | q_62_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_61_OBUF.FBK | 4026 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_61_OBUF.Q | q_61_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_62_OBUF.D1 | 3943 | ? | 0 | 4096 | q_62_OBUF | NULL | NULL | q_62_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_62_OBUF.D2 | 3944 | ? | 0 | 4096 | q_62_OBUF | NULL | NULL | q_62_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_62_OBUF.CLKF | 3945 | ? | 0 | 4096 | q_62_OBUF | NULL | NULL | q_62_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_61_OBUF.FBK
+
+SRFF_INSTANCE | q_62_OBUF.REG | q_62_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_62_OBUF.D | 3942 | ? | 0 | 0 | q_62_OBUF | NULL | NULL | q_62_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_62_OBUF.CLKF | 3945 | ? | 0 | 4096 | q_62_OBUF | NULL | NULL | q_62_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_61_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_62_OBUF.Q | 3946 | ? | 0 | 0 | q_62_OBUF | NULL | NULL | q_62_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_63_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_62_OBUF.FBK | 4027 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_62_OBUF.Q | q_62_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_63_OBUF$Q | 3575 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_63_OBUF.Q | q_63_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_63_OBUF | 3576 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_63_OBUF.Q | q_63_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_63_OBUF.FBK | 4032 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_63_OBUF.Q | q_63_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_63_OBUF.SI | q_63_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_62_OBUF.FBK | 4027 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_62_OBUF.Q | q_62_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_63_OBUF.D1 | 3948 | ? | 0 | 4096 | q_63_OBUF | NULL | NULL | q_63_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_63_OBUF.D2 | 3949 | ? | 0 | 4096 | q_63_OBUF | NULL | NULL | q_63_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_63_OBUF.CLKF | 3950 | ? | 0 | 4096 | q_63_OBUF | NULL | NULL | q_63_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_62_OBUF.FBK
+
+SRFF_INSTANCE | q_63_OBUF.REG | q_63_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_63_OBUF.D | 3947 | ? | 0 | 0 | q_63_OBUF | NULL | NULL | q_63_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_63_OBUF.CLKF | 3950 | ? | 0 | 4096 | q_63_OBUF | NULL | NULL | q_63_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_62_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_63_OBUF.Q | 3951 | ? | 0 | 0 | q_63_OBUF | NULL | NULL | q_63_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_6_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_5_OBUF.FBK | 4028 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_5_OBUF.Q | q_5_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_6_OBUF$Q | 3577 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_6_OBUF.Q | q_6_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_6_OBUF | 3578 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_6_OBUF.Q | q_6_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_6_OBUF.FBK | 4029 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_6_OBUF.Q | q_6_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_6_OBUF.SI | q_6_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_5_OBUF.FBK | 4028 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_5_OBUF.Q | q_5_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_6_OBUF.D1 | 3953 | ? | 0 | 4096 | q_6_OBUF | NULL | NULL | q_6_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_6_OBUF.D2 | 3954 | ? | 0 | 4096 | q_6_OBUF | NULL | NULL | q_6_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_6_OBUF.CLKF | 3955 | ? | 0 | 4096 | q_6_OBUF | NULL | NULL | q_6_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_5_OBUF.FBK
+
+SRFF_INSTANCE | q_6_OBUF.REG | q_6_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_6_OBUF.D | 3952 | ? | 0 | 0 | q_6_OBUF | NULL | NULL | q_6_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_6_OBUF.CLKF | 3955 | ? | 0 | 4096 | q_6_OBUF | NULL | NULL | q_6_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_5_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_6_OBUF.Q | 3956 | ? | 0 | 0 | q_6_OBUF | NULL | NULL | q_6_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_7_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_6_OBUF.FBK | 4029 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_6_OBUF.Q | q_6_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_7_OBUF$Q | 3579 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_7_OBUF.Q | q_7_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_7_OBUF | 3580 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_7_OBUF.Q | q_7_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_7_OBUF.FBK | 4030 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_7_OBUF.Q | q_7_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_7_OBUF.SI | q_7_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_6_OBUF.FBK | 4029 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_6_OBUF.Q | q_6_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_7_OBUF.D1 | 3958 | ? | 0 | 4096 | q_7_OBUF | NULL | NULL | q_7_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_7_OBUF.D2 | 3959 | ? | 0 | 4096 | q_7_OBUF | NULL | NULL | q_7_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_7_OBUF.CLKF | 3960 | ? | 0 | 4096 | q_7_OBUF | NULL | NULL | q_7_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_6_OBUF.FBK
+
+SRFF_INSTANCE | q_7_OBUF.REG | q_7_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_7_OBUF.D | 3957 | ? | 0 | 0 | q_7_OBUF | NULL | NULL | q_7_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_7_OBUF.CLKF | 3960 | ? | 0 | 4096 | q_7_OBUF | NULL | NULL | q_7_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_6_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_7_OBUF.Q | 3961 | ? | 0 | 0 | q_7_OBUF | NULL | NULL | q_7_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+ClkInv | q_8_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2222986240 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_7_OBUF.FBK | 4030 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_7_OBUF.Q | q_7_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_8_OBUF$Q | 3581 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_8_OBUF.Q | q_8_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_8_OBUF | 3582 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_8_OBUF.Q | q_8_OBUF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 5 | 0 | MC_FBK
+NODE | q_8_OBUF.FBK | 4031 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_8_OBUF.Q | q_8_OBUF | 5 | 0 | MC_FBK
+
+SIGNAL_INSTANCE | q_8_OBUF.SI | q_8_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_7_OBUF.FBK | 4030 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_7_OBUF.Q | q_7_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_8_OBUF.D1 | 3963 | ? | 0 | 4096 | q_8_OBUF | NULL | NULL | q_8_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_8_OBUF.D2 | 3964 | ? | 0 | 4096 | q_8_OBUF | NULL | NULL | q_8_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_8_OBUF.CLKF | 3965 | ? | 0 | 4096 | q_8_OBUF | NULL | NULL | q_8_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_7_OBUF.FBK
+
+SRFF_INSTANCE | q_8_OBUF.REG | q_8_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_8_OBUF.D | 3962 | ? | 0 | 0 | q_8_OBUF | NULL | NULL | q_8_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_8_OBUF.CLKF | 3965 | ? | 0 | 4096 | q_8_OBUF | NULL | NULL | q_8_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_7_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_8_OBUF.Q | 3966 | ? | 0 | 0 | q_8_OBUF | NULL | NULL | q_8_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped+OeInv | q_9_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2290095104 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_8_OBUF.FBK | 4031 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_8_OBUF.Q | q_8_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_9_OBUF$Q | 3583 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_9_OBUF.Q | q_9_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_9_OBUF | 3584 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_9_OBUF.Q | q_9_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | q_9_OBUF.SI | q_9_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_8_OBUF.FBK | 4031 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_8_OBUF.Q | q_8_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_9_OBUF.D1 | 3968 | ? | 0 | 4096 | q_9_OBUF | NULL | NULL | q_9_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_9_OBUF.D2 | 3969 | ? | 0 | 4096 | q_9_OBUF | NULL | NULL | q_9_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_9_OBUF.CLKF | 3970 | ? | 0 | 4096 | q_9_OBUF | NULL | NULL | q_9_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_8_OBUF.FBK
+
+SRFF_INSTANCE | q_9_OBUF.REG | q_9_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_9_OBUF.D | 3967 | ? | 0 | 0 | q_9_OBUF | NULL | NULL | q_9_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_9_OBUF.CLKF | 3970 | ? | 0 | 4096 | q_9_OBUF | NULL | NULL | q_9_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_8_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_9_OBUF.Q | 3971 | ? | 0 | 0 | q_9_OBUF | NULL | NULL | q_9_OBUF.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | q_64_OBUF | ripple_carry_counter_COPY_0_COPY_0 | 2155877376 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_63_OBUF.FBK | 4032 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_63_OBUF.Q | q_63_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | q_64_OBUF$Q | 3585 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_64_OBUF.Q | q_64_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | q_64_OBUF.UIM | 4041 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_64_OBUF.Q | q_64_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | q_64_OBUF.SI | q_64_OBUF | 0 | 1 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | q_63_OBUF.FBK | 4032 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_63_OBUF.Q | q_63_OBUF | 5 | 0 | MC_FBK
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | q_64_OBUF.D1 | 3973 | ? | 0 | 4096 | q_64_OBUF | NULL | NULL | q_64_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | q_64_OBUF.D2 | 3974 | ? | 0 | 4096 | q_64_OBUF | NULL | NULL | q_64_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_DC
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | q_64_OBUF.CLKF | 3975 | ? | 0 | 4096 | q_64_OBUF | NULL | NULL | q_64_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_63_OBUF.FBK
+
+SRFF_INSTANCE | q_64_OBUF.REG | q_64_OBUF | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | q_64_OBUF.D | 3972 | ? | 0 | 0 | q_64_OBUF | NULL | NULL | q_64_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | q_64_OBUF.CLKF | 3975 | ? | 0 | 4096 | q_64_OBUF | NULL | NULL | q_64_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 1 | IV_FALSE | q_63_OBUF.FBK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSRIO_1 | 3456 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | reset_IBUF | 6 | 5 | II_FSR
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | q_64_OBUF.Q | 3976 | ? | 0 | 0 | q_64_OBUF | NULL | NULL | q_64_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | q<0> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_0_OBUF$Q | 3457 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_0_OBUF.Q | q_0_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<0> | 3586 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<10> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_10_OBUF$Q | 3459 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_10_OBUF.Q | q_10_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<10> | 3587 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<10> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<11> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_11_OBUF$Q | 3461 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_11_OBUF.Q | q_11_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<11> | 3588 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<11> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<12> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_12_OBUF$Q | 3463 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_12_OBUF.Q | q_12_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<12> | 3589 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<12> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<13> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_13_OBUF$Q | 3465 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_13_OBUF.Q | q_13_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<13> | 3590 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<13> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<14> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_14_OBUF$Q | 3467 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_14_OBUF.Q | q_14_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<14> | 3591 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<14> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<15> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_15_OBUF$Q | 3469 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_15_OBUF.Q | q_15_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<15> | 3592 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<15> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<16> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_16_OBUF$Q | 3471 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_16_OBUF.Q | q_16_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<16> | 3593 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<16> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<17> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_17_OBUF$Q | 3473 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_17_OBUF.Q | q_17_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<17> | 3594 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<17> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<18> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_18_OBUF$Q | 3475 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_18_OBUF.Q | q_18_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<18> | 3595 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<18> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<19> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_19_OBUF$Q | 3477 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_19_OBUF.Q | q_19_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<19> | 3596 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<19> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<1> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_1_OBUF$Q | 3479 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_1_OBUF.Q | q_1_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<1> | 3597 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<20> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_20_OBUF$Q | 3481 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_20_OBUF.Q | q_20_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<20> | 3598 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<20> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<21> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_21_OBUF$Q | 3483 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_21_OBUF.Q | q_21_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<21> | 3599 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<21> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<22> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_22_OBUF$Q | 3485 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_22_OBUF.Q | q_22_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<22> | 3600 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<22> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<23> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_23_OBUF$Q | 3487 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_23_OBUF.Q | q_23_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<23> | 3601 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<23> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<24> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_24_OBUF$Q | 3489 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_24_OBUF.Q | q_24_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<24> | 3602 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<24> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<25> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_25_OBUF$Q | 3491 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_25_OBUF.Q | q_25_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<25> | 3603 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<25> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<26> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_26_OBUF$Q | 3493 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_26_OBUF.Q | q_26_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<26> | 3604 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<26> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<27> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_27_OBUF$Q | 3495 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_27_OBUF.Q | q_27_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<27> | 3605 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<27> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<28> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_28_OBUF$Q | 3497 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_28_OBUF.Q | q_28_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<28> | 3606 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<28> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<29> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_29_OBUF$Q | 3499 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_29_OBUF.Q | q_29_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<29> | 3607 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<29> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<2> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_2_OBUF$Q | 3501 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_2_OBUF.Q | q_2_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<2> | 3608 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<30> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_30_OBUF$Q | 3503 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_30_OBUF.Q | q_30_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<30> | 3609 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<30> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<31> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_31_OBUF$Q | 3505 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_31_OBUF.Q | q_31_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<31> | 3610 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<31> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<32> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_32_OBUF$Q | 3507 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_32_OBUF.Q | q_32_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<32> | 3611 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<32> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<33> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_33_OBUF$Q | 3509 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_33_OBUF.Q | q_33_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<33> | 3612 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<33> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<34> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_34_OBUF$Q | 3511 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_34_OBUF.Q | q_34_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<34> | 3613 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<34> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<35> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_35_OBUF$Q | 3513 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_35_OBUF.Q | q_35_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<35> | 3614 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<35> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<36> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_36_OBUF$Q | 3515 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_36_OBUF.Q | q_36_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<36> | 3615 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<36> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<37> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_37_OBUF$Q | 3517 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_37_OBUF.Q | q_37_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<37> | 3616 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<37> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<38> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_38_OBUF$Q | 3519 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_38_OBUF.Q | q_38_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<38> | 3617 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<38> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<39> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_39_OBUF$Q | 3521 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_39_OBUF.Q | q_39_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<39> | 3618 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<39> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<3> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_3_OBUF$Q | 3523 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_3_OBUF.Q | q_3_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<3> | 3619 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<3> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<40> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_40_OBUF$Q | 3525 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_40_OBUF.Q | q_40_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<40> | 3620 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<40> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<41> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_41_OBUF$Q | 3527 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_41_OBUF.Q | q_41_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<41> | 3621 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<41> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<42> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_42_OBUF$Q | 3529 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_42_OBUF.Q | q_42_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<42> | 3622 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<42> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<43> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_43_OBUF$Q | 3531 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_43_OBUF.Q | q_43_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<43> | 3623 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<43> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<44> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_44_OBUF$Q | 3533 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_44_OBUF.Q | q_44_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<44> | 3624 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<44> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<45> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_45_OBUF$Q | 3535 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_45_OBUF.Q | q_45_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<45> | 3625 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<45> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<46> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_46_OBUF$Q | 3537 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_46_OBUF.Q | q_46_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<46> | 3626 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<46> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<47> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_47_OBUF$Q | 3539 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_47_OBUF.Q | q_47_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<47> | 3627 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<47> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<48> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_48_OBUF$Q | 3541 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_48_OBUF.Q | q_48_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<48> | 3628 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<48> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<49> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_49_OBUF$Q | 3543 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_49_OBUF.Q | q_49_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<49> | 3629 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<49> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<4> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_4_OBUF$Q | 3545 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_4_OBUF.Q | q_4_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<4> | 3630 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<4> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<50> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_50_OBUF$Q | 3547 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_50_OBUF.Q | q_50_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<50> | 3631 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<50> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<51> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_51_OBUF$Q | 3549 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_51_OBUF.Q | q_51_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<51> | 3632 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<51> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<52> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_52_OBUF$Q | 3551 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_52_OBUF.Q | q_52_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<52> | 3633 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<52> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<53> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_53_OBUF$Q | 3553 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_53_OBUF.Q | q_53_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<53> | 3634 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<53> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<54> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_54_OBUF$Q | 3555 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_54_OBUF.Q | q_54_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<54> | 3635 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<54> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<55> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_55_OBUF$Q | 3557 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_55_OBUF.Q | q_55_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<55> | 3636 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<55> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<56> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_56_OBUF$Q | 3559 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_56_OBUF.Q | q_56_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<56> | 3637 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<56> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<57> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_57_OBUF$Q | 3561 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_57_OBUF.Q | q_57_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<57> | 3638 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<57> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<58> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_58_OBUF$Q | 3563 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_58_OBUF.Q | q_58_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<58> | 3639 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<58> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<59> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_59_OBUF$Q | 3565 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_59_OBUF.Q | q_59_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<59> | 3640 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<59> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<5> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_5_OBUF$Q | 3567 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_5_OBUF.Q | q_5_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<5> | 3641 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<5> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<60> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_60_OBUF$Q | 3569 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_60_OBUF.Q | q_60_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<60> | 3642 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<60> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<61> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_61_OBUF$Q | 3571 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_61_OBUF.Q | q_61_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<61> | 3643 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<61> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<62> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_62_OBUF$Q | 3573 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_62_OBUF.Q | q_62_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<62> | 3644 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<62> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<63> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_63_OBUF$Q | 3575 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_63_OBUF.Q | q_63_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<63> | 3645 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<63> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<6> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_6_OBUF$Q | 3577 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_6_OBUF.Q | q_6_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<6> | 3646 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<6> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<7> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_7_OBUF$Q | 3579 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_7_OBUF.Q | q_7_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<7> | 3647 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<7> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<8> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_8_OBUF$Q | 3581 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_8_OBUF.Q | q_8_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<8> | 3648 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<8> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<9> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_9_OBUF$Q | 3583 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_9_OBUF.Q | q_9_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<9> | 3649 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<9> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | q<64> | ripple_carry_counter_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | q_64_OBUF$Q | 3585 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | q_64_OBUF.Q | q_64_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | q<64> | 3650 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<64> | 0 | 6 | OI_OUT
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_q<0> | ripple_carry_counter_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | q<0> | 3586 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<0> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | q<0>_PIN_BUF_ | 4033 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<0> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_q<1> | ripple_carry_counter_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | q<1> | 3597 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<1> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | q<1>_PIN_BUF_ | 4034 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<1> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_q<24> | ripple_carry_counter_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | q<24> | 3602 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<24> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | q<24>_PIN_BUF_ | 4035 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<24> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_q<2> | ripple_carry_counter_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | q<2> | 3608 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<2> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | q<2>_PIN_BUF_ | 4036 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<2> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_q<39> | ripple_carry_counter_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | q<39> | 3618 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<39> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | q<39>_PIN_BUF_ | 4037 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<39> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_q<4> | ripple_carry_counter_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | q<4> | 3630 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<4> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | q<4>_PIN_BUF_ | 4038 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<4> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_q<53> | ripple_carry_counter_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | q<53> | 3634 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<53> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | q<53>_PIN_BUF_ | 4039 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<53> | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | Pfbk_Created_q<9> | ripple_carry_counter_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | q<9> | 3649 | PO | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | q<9> | 0 | 6 | OI_OUT
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | q<9>_PIN_BUF_ | 4040 | ? | 0 | 0 | ripple_carry_counter_COPY_0_COPY_0 | NULL | NULL | Pfbk_Created_q<9> | 0 | 5 | II_IMUX
+
+FB_INSTANCE | FOOBAR1_ | ripple_carry_counter_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | q_10_OBUF | 1 | NULL | 0 | q<10> | 1 | 16 | 49152
+FBPIN | 2 | q_11_OBUF | 1 | NULL | 0 | q<11> | 1 | 13 | 49152
+FBPIN | 3 | q_12_OBUF | 1 | NULL | 0 | q<12> | 1 | 18 | 49152
+FBPIN | 4 | q_13_OBUF | 1 | NULL | 0 | q<13> | 1 | 20 | 49152
+FBPIN | 5 | q_14_OBUF | 1 | NULL | 0 | q<14> | 1 | 14 | 49152
+FBPIN | 6 | q_15_OBUF | 1 | NULL | 0 | q<15> | 1 | 15 | 49152
+FBPIN | 7 | q_16_OBUF | 1 | NULL | 0 | q<16> | 1 | 25 | 49152
+FBPIN | 8 | q_17_OBUF | 1 | NULL | 0 | q<17> | 1 | 17 | 49152
+FBPIN | 9 | NULL | 0 | clk_IBUF | 1 | NULL | 0 | 22 | 57344
+FBPIN | 10 | q_18_OBUF | 1 | NULL | 0 | q<18> | 1 | 28 | 49152
+FBPIN | 11 | q_19_OBUF | 1 | NULL | 0 | q<19> | 1 | 23 | 57344
+FBPIN | 12 | q_1_OBUF | 1 | Pfbk_Created_q<1> | 1 | q<1> | 1 | 33 | 49152
+FBPIN | 13 | q_20_OBUF | 1 | NULL | 0 | q<20> | 1 | 36 | 49152
+FBPIN | 14 | q_21_OBUF | 1 | NULL | 0 | q<21> | 1 | 27 | 57344
+FBPIN | 15 | q_22_OBUF | 1 | NULL | 0 | q<22> | 1 | 29 | 49152
+FBPIN | 16 | q_23_OBUF | 1 | NULL | 0 | q<23> | 1 | 39 | 49152
+FBPIN | 17 | q_24_OBUF | 1 | Pfbk_Created_q<24> | 1 | q<24> | 1 | 30 | 49152
+
+FB_INSTANCE | FOOBAR2_ | ripple_carry_counter_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | q_25_OBUF | 1 | NULL | 0 | q<25> | 1 | 87 | 49152
+FBPIN | 2 | q_26_OBUF | 1 | NULL | 0 | q<26> | 1 | 94 | 49152
+FBPIN | 3 | q_27_OBUF | 1 | NULL | 0 | q<27> | 1 | 91 | 49152
+FBPIN | 4 | q_28_OBUF | 1 | NULL | 0 | q<28> | 1 | 93 | 49152
+FBPIN | 5 | q_29_OBUF | 1 | NULL | 0 | q<29> | 1 | 95 | 49152
+FBPIN | 6 | q_2_OBUF | 1 | Pfbk_Created_q<2> | 1 | q<2> | 1 | 96 | 49152
+FBPIN | 7 | q_30_OBUF | 1 | NULL | 0 | q<30> | 1 | 3 | 53248
+FBPIN | 8 | q_31_OBUF | 1 | NULL | 0 | q<31> | 1 | 97 | 49152
+FBPIN | 9 | NULL | 0 | reset_IBUF | 1 | NULL | 0 | 99 | 51200
+FBPIN | 10 | q_32_OBUF | 1 | NULL | 0 | q<32> | 1 | 1 | 49152
+FBPIN | 11 | q_33_OBUF | 1 | NULL | 0 | q<33> | 1 | 4 | 53248
+FBPIN | 12 | q_34_OBUF | 1 | NULL | 0 | q<34> | 1 | 6 | 49152
+FBPIN | 13 | q_35_OBUF | 1 | NULL | 0 | q<35> | 1 | 8 | 49152
+FBPIN | 14 | q_36_OBUF | 1 | NULL | 0 | q<36> | 1 | 9 | 49152
+FBPIN | 15 | q_37_OBUF | 1 | NULL | 0 | q<37> | 1 | 11 | 49152
+FBPIN | 16 | q_38_OBUF | 1 | NULL | 0 | q<38> | 1 | 10 | 49152
+FBPIN | 17 | q_39_OBUF | 1 | Pfbk_Created_q<39> | 1 | q<39> | 1 | 12 | 49152
+
+FB_INSTANCE | FOOBAR3_ | ripple_carry_counter_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | q_3_OBUF | 1 | NULL | 0 | q<3> | 1 | 41 | 49152
+FBPIN | 2 | q_40_OBUF | 1 | NULL | 0 | q<40> | 1 | 32 | 49152
+FBPIN | 3 | q_41_OBUF | 1 | NULL | 0 | q<41> | 1 | 49 | 49152
+FBPIN | 4 | q_42_OBUF | 1 | NULL | 0 | q<42> | 1 | 50 | 49152
+FBPIN | 5 | q_43_OBUF | 1 | NULL | 0 | q<43> | 1 | 35 | 49152
+FBPIN | 6 | q_44_OBUF | 1 | NULL | 0 | q<44> | 1 | 53 | 49152
+FBPIN | 7 | q_45_OBUF | 1 | NULL | 0 | q<45> | 1 | 54 | 49152
+FBPIN | 8 | q_46_OBUF | 1 | NULL | 0 | q<46> | 1 | 37 | 49152
+FBPIN | 9 | q_47_OBUF | 1 | NULL | 0 | q<47> | 1 | 42 | 49152
+FBPIN | 10 | q_48_OBUF | 1 | NULL | 0 | q<48> | 1 | 60 | 49152
+FBPIN | 11 | q_49_OBUF | 1 | NULL | 0 | q<49> | 1 | 52 | 49152
+FBPIN | 12 | q_4_OBUF | 1 | Pfbk_Created_q<4> | 1 | q<4> | 1 | 61 | 49152
+FBPIN | 13 | q_50_OBUF | 1 | NULL | 0 | q<50> | 1 | 63 | 49152
+FBPIN | 14 | q_51_OBUF | 1 | NULL | 0 | q<51> | 1 | 55 | 49152
+FBPIN | 15 | q_52_OBUF | 1 | NULL | 0 | q<52> | 1 | 56 | 49152
+FBPIN | 16 | q_53_OBUF | 1 | Pfbk_Created_q<53> | 1 | q<53> | 1 | 65 | 49152
+
+FB_INSTANCE | FOOBAR4_ | ripple_carry_counter_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | q_0_OBUF | 1 | Pfbk_Created_q<0> | 1 | q<0> | 1 | 66 | 49152
+FBPIN | 2 | q_54_OBUF | 1 | NULL | 0 | q<54> | 1 | 64 | 49152
+FBPIN | 3 | q_55_OBUF | 1 | NULL | 0 | q<55> | 1 | 71 | 49152
+FBPIN | 4 | q_56_OBUF | 1 | NULL | 0 | q<56> | 1 | 72 | 49152
+FBPIN | 5 | q_57_OBUF | 1 | NULL | 0 | q<57> | 1 | 67 | 49152
+FBPIN | 6 | q_58_OBUF | 1 | NULL | 0 | q<58> | 1 | 76 | 49152
+FBPIN | 7 | q_59_OBUF | 1 | NULL | 0 | q<59> | 1 | 77 | 49152
+FBPIN | 8 | q_5_OBUF | 1 | NULL | 0 | q<5> | 1 | 68 | 49152
+FBPIN | 9 | q_60_OBUF | 1 | NULL | 0 | q<60> | 1 | 70 | 49152
+FBPIN | 10 | q_61_OBUF | 1 | NULL | 0 | q<61> | 1 | 81 | 49152
+FBPIN | 11 | q_62_OBUF | 1 | NULL | 0 | q<62> | 1 | 74 | 49152
+FBPIN | 12 | q_63_OBUF | 1 | NULL | 0 | q<63> | 1 | 82 | 49152
+FBPIN | 13 | q_64_OBUF | 1 | NULL | 0 | q<64> | 1 | 85 | 49152
+FBPIN | 14 | q_6_OBUF | 1 | NULL | 0 | q<6> | 1 | 78 | 49152
+FBPIN | 15 | q_7_OBUF | 1 | NULL | 0 | q<7> | 1 | 89 | 49152
+FBPIN | 16 | q_8_OBUF | 1 | NULL | 0 | q<8> | 1 | 86 | 49152
+FBPIN | 17 | q_9_OBUF | 1 | Pfbk_Created_q<9> | 1 | q<9> | 1 | 90 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | ripple_carry_counter_COPY_0_COPY_0 | 0 | 0 | 0
+
+BUSINFO | Q<64:0> | 65 | 0 | 1 | q<0> | 64 | q<10> | 54 | q<11> | 53 | q<12> | 52 | q<13> | 51 | q<14> | 50 | q<15> | 49 | q<16> | 48 | q<17> | 47 | q<18> | 46 | q<19> | 45 | q<1> | 63 | q<20> | 44 | q<21> | 43 | q<22> | 42 | q<23> | 41 | q<24> | 40 | q<25> | 39 | q<26> | 38 | q<27> | 37 | q<28> | 36 | q<29> | 35 | q<2> | 62 | q<30> | 34 | q<31> | 33 | q<32> | 32 | q<33> | 31 | q<34> | 30 | q<35> | 29 | q<36> | 28 | q<37> | 27 | q<38> | 26 | q<39> | 25 | q<3> | 61 | q<40> | 24 | q<41> | 23 | q<42> | 22 | q<43> | 21 | q<44> | 20 | q<45> | 19 | q<46> | 18 | q<47> | 17 | q<48> | 16 | q<49> | 15 | q<4> | 60 | q<50> | 14 | q<51> | 13 | q<52> | 12 | q<53> | 11 | q<54> | 10 | q<55> | 9 | q<56> | 8 | q<57> | 7 | q<58> | 6 | q<59> | 5 | q<5> | 59 | q<60> | 4 | q<61> | 3 | q<62> | 2 | q<63> | 1 | q<64> | 0 | q<6> | 58 | q<7> | 57 | q<8> | 56 | q<9> | 55
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | q_10_OBUF.FBK | NULL | 1 | q_11_OBUF.FBK | NULL | 2 | q_12_OBUF.FBK | NULL | 3 | q_13_OBUF.FBK | NULL | 4 | q_14_OBUF.FBK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 5 | q_15_OBUF.FBK | NULL | 6 | q_16_OBUF.FBK | NULL | 7 | q_17_OBUF.FBK | NULL | 9 | q_18_OBUF.FBK | NULL | 10 | q_19_OBUF.FBK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 12 | q_20_OBUF.FBK | NULL | 13 | q_21_OBUF.FBK | NULL | 14 | q_22_OBUF.FBK | NULL | 15 | q_23_OBUF.FBK | NULL | 32 | q<9> | 90
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 35 | q<0> | 66
+
+FB_IMUX_INDEX | FOOBAR1_ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | -1 | 9 | 10 | -1 | 12 | 13 | 14 | 15 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 85 | -1 | -1 | 125
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 2 | q_25_OBUF.FBK | NULL | 3 | q_26_OBUF.FBK | NULL | 5 | q_27_OBUF.FBK | NULL | 6 | q_28_OBUF.FBK | NULL | 7 | q<1> | 33
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 8 | q_29_OBUF.FBK | NULL | 9 | q<24> | 30 | 11 | q_30_OBUF.FBK | NULL | 12 | q_31_OBUF.FBK | NULL | 15 | q_32_OBUF.FBK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 17 | q_33_OBUF.FBK | NULL | 18 | q_34_OBUF.FBK | NULL | 20 | q_35_OBUF.FBK | NULL | 21 | q_36_OBUF.FBK | NULL | 23 | q_37_OBUF.FBK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 24 | q_38_OBUF.FBK | NULL
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | -1 | 0 | 1 | -1 | 2 | 3 | 117 | 4 | 99 | -1 | 6 | 7 | -1 | -1 | 9 | -1 | 10 | 11 | -1 | 12 | 13 | -1 | 14 | 15 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 0 | q_3_OBUF.FBK | NULL | 1 | q_40_OBUF.FBK | NULL | 2 | q_41_OBUF.FBK | NULL | 3 | q_42_OBUF.FBK | NULL | 4 | q<39> | 12
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 5 | q_43_OBUF.FBK | NULL | 6 | q_45_OBUF.FBK | NULL | 7 | q_46_OBUF.FBK | NULL | 8 | q_47_OBUF.FBK | NULL | 9 | q_44_OBUF.FBK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 10 | q_49_OBUF.FBK | NULL | 12 | q_50_OBUF.FBK | NULL | 13 | q<2> | 96 | 14 | q_52_OBUF.FBK | NULL | 15 | q_48_OBUF.FBK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 21 | q_51_OBUF.FBK | NULL
+
+FB_IMUX_INDEX | FOOBAR3_ | 0 | 1 | 2 | 3 | 94 | 4 | 6 | 7 | 8 | 5 | 10 | -1 | 12 | 97 | 14 | 9 | -1 | -1 | -1 | -1 | -1 | 13 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 1 | q<4> | 61 | 3 | q_54_OBUF.FBK | NULL | 5 | q_55_OBUF.FBK | NULL | 6 | q_56_OBUF.FBK | NULL | 8 | q_57_OBUF.FBK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 9 | q_58_OBUF.FBK | NULL | 11 | q_59_OBUF.FBK | NULL | 12 | q_5_OBUF.FBK | NULL | 13 | q_6_OBUF.FBK | NULL | 14 | q_60_OBUF.FBK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 15 | q_61_OBUF.FBK | NULL | 17 | q_62_OBUF.FBK | NULL | 18 | q_63_OBUF.FBK | NULL | 23 | q_7_OBUF.FBK | NULL | 24 | q_8_OBUF.FBK | NULL
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 28 | q<53> | 65
+
+FB_IMUX_INDEX | FOOBAR4_ | -1 | 113 | -1 | 1 | -1 | 2 | 3 | -1 | 4 | 5 | -1 | 6 | 7 | 13 | 8 | 9 | -1 | 10 | 11 | -1 | -1 | -1 | -1 | 14 | 15 | -1 | -1 | -1 | 107 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | FCLK-IO_0 | 0 | 0
+
+GLOBAL_FSR | FSRIO_1 | 0 | 0

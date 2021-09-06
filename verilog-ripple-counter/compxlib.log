@@ -1,0 +1,47 @@
+    ____  ____
+   /   /\/   /
+  /___/  \  /    VENDOR      : Xilinx Inc.
+  \   \   \/     VERSION     : 14.6 (P.68d)
+   \   \         APPLICATION : /opt/XilinxEmbedded/14.6/ISE_DS/ISE/bin/lin64/unwrapped/compxlib
+   /   /         CONTENTS    : Compilation Log
+  /___/   /\     FILENAME    : compxlib.log
+  \   \  /  \    
+   \___\/\___\
+
+Release 14.6 - /opt/XilinxEmbedded/14.6/ISE_DS/ISE/bin/lin64/unwrapped/compxlib 14.6 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Processing command line ...
+Library Source Paths => '/opt/XilinxEmbedded/14.6/ISE_DS/ISE'
+Current Working Directory => '/opt/verilog/verilog-ripple-counter'
+Compilation Mode = FAST
+Execute Mode = ON
+Scheduling library installation & compilation for architectures: spartan6
+
+Scheduling library installation & compilation for libraries: simprim unisim xilinxcorelib edk
+
+Signature:-
+------------------------------------------------------------------------------
+/opt/XilinxEmbedded/14.6/ISE_DS/ISE/bin/lin64/unwrapped/compxlib -s mti_se -l vhdl -arch spartan6 -lib unisim -lib simprim -lib xilinxcorelib -lib edk -exclude_superseded -intstyle ise 
+------------------------------------------------------------------------------
+ERROR:Compxlib - COMPXLIB[sim]: Unable to automatically find executables for simulator 'mti_se' from the following paths:
+    /opt/XilinxEmbedded/14.6/ISE_DS/ISE//bin/lin64
+   /opt/XilinxEmbedded/14.6/ISE_DS/ISE/bin/lin64
+   /opt/XilinxEmbedded/14.6/ISE_DS/ISE/sysgen/util
+   /opt/XilinxEmbedded/14.6/ISE_DS/ISE/sysgen/bin
+   /opt/XilinxEmbedded/14.6/ISE_DS/ISE/../../../DocNav
+   /opt/XilinxEmbedded/14.6/ISE_DS/PlanAhead/bin
+   /opt/XilinxEmbedded/14.6/ISE_DS/EDK/bin/lin64
+   /opt/XilinxEmbedded/14.6/ISE_DS/EDK/gnu/microblaze/lin/bin
+   /opt/XilinxEmbedded/14.6/ISE_DS/EDK/gnu/powerpc-eabi/lin/bin
+   /opt/XilinxEmbedded/14.6/ISE_DS/EDK/gnu/arm/lin/bin
+   /opt/XilinxEmbedded/14.6/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_be/bin
+   /opt/XilinxEmbedded/14.6/ISE_DS/EDK/gnu/microblaze/linux_toolchain/lin64_le/bin
+   /opt/XilinxEmbedded/14.6/ISE_DS/common/bin/lin64
+   /usr/local/sbin
+   /usr/local/bin
+   /usr/sbin
+   /usr/bin
+   /sbin
+   /bin.
+Simulator 'mti_se' is ignored.

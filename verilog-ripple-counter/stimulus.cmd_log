@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/stimulus.xst" -ofn "/opt/verilog/verilog-ripple-counter/stimulus.syr" 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/stimulus.xst" -ofn "/opt/verilog/verilog-ripple-counter/stimulus.syr" 

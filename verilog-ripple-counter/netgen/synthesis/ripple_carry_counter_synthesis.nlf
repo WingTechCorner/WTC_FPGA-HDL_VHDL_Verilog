@@ -1,0 +1,21 @@
+Release 14.6 - netgen P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -ar Structure -tm ripple_carry_counter -w
+-dir netgen/synthesis -ofmt vhdl -sim ripple_carry_counter.ngc
+ripple_carry_counter_synthesis.vhd  
+
+Reading design 'ripple_carry_counter.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist
+'/opt/verilog/verilog-ripple-counter/netgen/synthesis/ripple_carry_counter_synth
+esis.vhd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 305528 kilobytes

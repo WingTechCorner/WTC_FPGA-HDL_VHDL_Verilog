@@ -1,0 +1,774 @@
+MDF Database:  version 1.0
+MDF_INFO | ripple_carry_counter | XC9572-7-TQ100
+MACROCELL | 3 | 0 | q_0_OBUF
+ATTRIBUTES | 4629250 | 0
+INPUTS | 0
+EQ | 3 | 
+   q<0>.T = Vcc;
+   !q<0>.CLK = clk;	// GCK
+   q<0>.AR = reset;	// GSR
+GLOBALS | 2 | 2 | clk | 4 | reset
+
+MACROCELL | 0 | 0 | q_10_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 1
+INPUTS | 1 | q<9>.PIN
+INPUTP | 1 | 82
+EQ | 3 | 
+   q<10>.T = Vcc;
+   q<10>.CLK = !q<9>.PIN;
+   q<10>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 1 | q_11_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 2
+INPUTS | 1 | q_10_OBUF.LFBK
+INPUTMC | 1 | 0 | 0
+EQ | 3 | 
+   q<11>.T = Vcc;
+   q<11>.CLK = !q_10_OBUF.LFBK;
+   q<11>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 2 | q_12_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 1 | q_11_OBUF.LFBK
+INPUTMC | 1 | 0 | 1
+EQ | 3 | 
+   q<12>.T = Vcc;
+   q<12>.CLK = !q_11_OBUF.LFBK;
+   q<12>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 3 | q_13_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 4
+INPUTS | 1 | q_12_OBUF.LFBK
+INPUTMC | 1 | 0 | 2
+EQ | 3 | 
+   q<13>.T = Vcc;
+   q<13>.CLK = !q_12_OBUF.LFBK;
+   q<13>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 4 | q_14_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 5
+INPUTS | 1 | q_13_OBUF.LFBK
+INPUTMC | 1 | 0 | 3
+EQ | 3 | 
+   q<14>.T = Vcc;
+   q<14>.CLK = !q_13_OBUF.LFBK;
+   q<14>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 5 | q_15_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 6
+INPUTS | 1 | q_14_OBUF.LFBK
+INPUTMC | 1 | 0 | 4
+EQ | 3 | 
+   q<15>.T = Vcc;
+   q<15>.CLK = !q_14_OBUF.LFBK;
+   q<15>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 6 | q_16_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 7
+INPUTS | 1 | q_15_OBUF.LFBK
+INPUTMC | 1 | 0 | 5
+EQ | 3 | 
+   q<16>.T = Vcc;
+   q<16>.CLK = !q_15_OBUF.LFBK;
+   q<16>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 7 | q_17_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 9
+INPUTS | 1 | q_16_OBUF.LFBK
+INPUTMC | 1 | 0 | 6
+EQ | 3 | 
+   q<17>.T = Vcc;
+   q<17>.CLK = !q_16_OBUF.LFBK;
+   q<17>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 9 | q_18_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 10
+INPUTS | 1 | q_17_OBUF.LFBK
+INPUTMC | 1 | 0 | 7
+EQ | 3 | 
+   q<18>.T = Vcc;
+   q<18>.CLK = !q_17_OBUF.LFBK;
+   q<18>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 10 | q_19_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 12
+INPUTS | 1 | q_18_OBUF.LFBK
+INPUTMC | 1 | 0 | 9
+EQ | 3 | 
+   q<19>.T = Vcc;
+   q<19>.CLK = !q_18_OBUF.LFBK;
+   q<19>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 11 | q_1_OBUF
+ATTRIBUTES | 4596514 | 0
+INPUTS | 1 | q<0>.PIN
+INPUTP | 1 | 60
+EQ | 3 | 
+   q<1>.T = Vcc;
+   q<1>.CLK = !q<0>.PIN;
+   q<1>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 12 | q_20_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 13
+INPUTS | 1 | q_19_OBUF.LFBK
+INPUTMC | 1 | 0 | 10
+EQ | 3 | 
+   q<20>.T = Vcc;
+   q<20>.CLK = !q_19_OBUF.LFBK;
+   q<20>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 13 | q_21_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 14
+INPUTS | 1 | q_20_OBUF.LFBK
+INPUTMC | 1 | 0 | 12
+EQ | 3 | 
+   q<21>.T = Vcc;
+   q<21>.CLK = !q_20_OBUF.LFBK;
+   q<21>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 14 | q_22_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 15
+INPUTS | 1 | q_21_OBUF.LFBK
+INPUTMC | 1 | 0 | 13
+EQ | 3 | 
+   q<22>.T = Vcc;
+   q<22>.CLK = !q_21_OBUF.LFBK;
+   q<22>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 15 | q_23_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 0 | 16
+INPUTS | 1 | q_22_OBUF.LFBK
+INPUTMC | 1 | 0 | 14
+EQ | 3 | 
+   q<23>.T = Vcc;
+   q<23>.CLK = !q_22_OBUF.LFBK;
+   q<23>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 0 | 16 | q_24_OBUF
+ATTRIBUTES | 4596514 | 0
+INPUTS | 1 | q_23_OBUF.LFBK
+INPUTMC | 1 | 0 | 15
+EQ | 3 | 
+   q<24>.T = Vcc;
+   q<24>.CLK = !q_23_OBUF.LFBK;
+   q<24>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 0 | q_25_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 1 | q<24>.PIN
+INPUTP | 1 | 27
+EQ | 3 | 
+   q<25>.T = Vcc;
+   q<25>.CLK = !q<24>.PIN;
+   q<25>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 1 | q_26_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 2
+INPUTS | 1 | q_25_OBUF.LFBK
+INPUTMC | 1 | 1 | 0
+EQ | 3 | 
+   q<26>.T = Vcc;
+   q<26>.CLK = !q_25_OBUF.LFBK;
+   q<26>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 2 | q_27_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 3
+INPUTS | 1 | q_26_OBUF.LFBK
+INPUTMC | 1 | 1 | 1
+EQ | 3 | 
+   q<27>.T = Vcc;
+   q<27>.CLK = !q_26_OBUF.LFBK;
+   q<27>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 3 | q_28_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 4
+INPUTS | 1 | q_27_OBUF.LFBK
+INPUTMC | 1 | 1 | 2
+EQ | 3 | 
+   q<28>.T = Vcc;
+   q<28>.CLK = !q_27_OBUF.LFBK;
+   q<28>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 4 | q_29_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 6
+INPUTS | 1 | q_28_OBUF.LFBK
+INPUTMC | 1 | 1 | 3
+EQ | 3 | 
+   q<29>.T = Vcc;
+   q<29>.CLK = !q_28_OBUF.LFBK;
+   q<29>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 5 | q_2_OBUF
+ATTRIBUTES | 4596514 | 0
+INPUTS | 1 | q<1>.PIN
+INPUTP | 1 | 30
+EQ | 3 | 
+   q<2>.T = Vcc;
+   q<2>.CLK = !q<1>.PIN;
+   q<2>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 6 | q_30_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 7
+INPUTS | 1 | q_29_OBUF.LFBK
+INPUTMC | 1 | 1 | 4
+EQ | 3 | 
+   q<30>.T = Vcc;
+   q<30>.CLK = !q_29_OBUF.LFBK;
+   q<30>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 7 | q_31_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 9
+INPUTS | 1 | q_30_OBUF.LFBK
+INPUTMC | 1 | 1 | 6
+EQ | 3 | 
+   q<31>.T = Vcc;
+   q<31>.CLK = !q_30_OBUF.LFBK;
+   q<31>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 9 | q_32_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 10
+INPUTS | 1 | q_31_OBUF.LFBK
+INPUTMC | 1 | 1 | 7
+EQ | 3 | 
+   q<32>.T = Vcc;
+   q<32>.CLK = !q_31_OBUF.LFBK;
+   q<32>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 10 | q_33_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 11
+INPUTS | 1 | q_32_OBUF.LFBK
+INPUTMC | 1 | 1 | 9
+EQ | 3 | 
+   q<33>.T = Vcc;
+   q<33>.CLK = !q_32_OBUF.LFBK;
+   q<33>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 11 | q_34_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 12
+INPUTS | 1 | q_33_OBUF.LFBK
+INPUTMC | 1 | 1 | 10
+EQ | 3 | 
+   q<34>.T = Vcc;
+   q<34>.CLK = !q_33_OBUF.LFBK;
+   q<34>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 12 | q_35_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 13
+INPUTS | 1 | q_34_OBUF.LFBK
+INPUTMC | 1 | 1 | 11
+EQ | 3 | 
+   q<35>.T = Vcc;
+   q<35>.CLK = !q_34_OBUF.LFBK;
+   q<35>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 13 | q_36_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 14
+INPUTS | 1 | q_35_OBUF.LFBK
+INPUTMC | 1 | 1 | 12
+EQ | 3 | 
+   q<36>.T = Vcc;
+   q<36>.CLK = !q_35_OBUF.LFBK;
+   q<36>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 14 | q_37_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 15
+INPUTS | 1 | q_36_OBUF.LFBK
+INPUTMC | 1 | 1 | 13
+EQ | 3 | 
+   q<37>.T = Vcc;
+   q<37>.CLK = !q_36_OBUF.LFBK;
+   q<37>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 15 | q_38_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 1 | 16
+INPUTS | 1 | q_37_OBUF.LFBK
+INPUTMC | 1 | 1 | 14
+EQ | 3 | 
+   q<38>.T = Vcc;
+   q<38>.CLK = !q_37_OBUF.LFBK;
+   q<38>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 1 | 16 | q_39_OBUF
+ATTRIBUTES | 4596514 | 0
+INPUTS | 1 | q_38_OBUF.LFBK
+INPUTMC | 1 | 1 | 15
+EQ | 3 | 
+   q<39>.T = Vcc;
+   q<39>.CLK = !q_38_OBUF.LFBK;
+   q<39>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 0 | q_3_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 11
+INPUTS | 1 | q<2>.PIN
+INPUTP | 1 | 88
+EQ | 3 | 
+   q<3>.T = Vcc;
+   q<3>.CLK = !q<2>.PIN;
+   q<3>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 1 | q_40_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 2
+INPUTS | 1 | q<39>.PIN
+INPUTP | 1 | 10
+EQ | 3 | 
+   q<40>.T = Vcc;
+   q<40>.CLK = !q<39>.PIN;
+   q<40>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 2 | q_41_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 3
+INPUTS | 1 | q_40_OBUF.LFBK
+INPUTMC | 1 | 2 | 1
+EQ | 3 | 
+   q<41>.T = Vcc;
+   q<41>.CLK = !q_40_OBUF.LFBK;
+   q<41>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 3 | q_42_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 4
+INPUTS | 1 | q_41_OBUF.LFBK
+INPUTMC | 1 | 2 | 2
+EQ | 3 | 
+   q<42>.T = Vcc;
+   q<42>.CLK = !q_41_OBUF.LFBK;
+   q<42>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 4 | q_43_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 5
+INPUTS | 1 | q_42_OBUF.LFBK
+INPUTMC | 1 | 2 | 3
+EQ | 3 | 
+   q<43>.T = Vcc;
+   q<43>.CLK = !q_42_OBUF.LFBK;
+   q<43>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 5 | q_44_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 6
+INPUTS | 1 | q_43_OBUF.LFBK
+INPUTMC | 1 | 2 | 4
+EQ | 3 | 
+   q<44>.T = Vcc;
+   q<44>.CLK = !q_43_OBUF.LFBK;
+   q<44>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 6 | q_45_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 7
+INPUTS | 1 | q_44_OBUF.LFBK
+INPUTMC | 1 | 2 | 5
+EQ | 3 | 
+   q<45>.T = Vcc;
+   q<45>.CLK = !q_44_OBUF.LFBK;
+   q<45>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 7 | q_46_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 8
+INPUTS | 1 | q_45_OBUF.LFBK
+INPUTMC | 1 | 2 | 6
+EQ | 3 | 
+   q<46>.T = Vcc;
+   q<46>.CLK = !q_45_OBUF.LFBK;
+   q<46>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 8 | q_47_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 9
+INPUTS | 1 | q_46_OBUF.LFBK
+INPUTMC | 1 | 2 | 7
+EQ | 3 | 
+   q<47>.T = Vcc;
+   q<47>.CLK = !q_46_OBUF.LFBK;
+   q<47>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 9 | q_48_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 10
+INPUTS | 1 | q_47_OBUF.LFBK
+INPUTMC | 1 | 2 | 8
+EQ | 3 | 
+   q<48>.T = Vcc;
+   q<48>.CLK = !q_47_OBUF.LFBK;
+   q<48>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 10 | q_49_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 12
+INPUTS | 1 | q_48_OBUF.LFBK
+INPUTMC | 1 | 2 | 9
+EQ | 3 | 
+   q<49>.T = Vcc;
+   q<49>.CLK = !q_48_OBUF.LFBK;
+   q<49>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 11 | q_4_OBUF
+ATTRIBUTES | 4596514 | 0
+INPUTS | 1 | q_3_OBUF.LFBK
+INPUTMC | 1 | 2 | 0
+EQ | 3 | 
+   q<4>.T = Vcc;
+   q<4>.CLK = !q_3_OBUF.LFBK;
+   q<4>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 12 | q_50_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 13
+INPUTS | 1 | q_49_OBUF.LFBK
+INPUTMC | 1 | 2 | 10
+EQ | 3 | 
+   q<50>.T = Vcc;
+   q<50>.CLK = !q_49_OBUF.LFBK;
+   q<50>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 13 | q_51_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 14
+INPUTS | 1 | q_50_OBUF.LFBK
+INPUTMC | 1 | 2 | 12
+EQ | 3 | 
+   q<51>.T = Vcc;
+   q<51>.CLK = !q_50_OBUF.LFBK;
+   q<51>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 14 | q_52_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 2 | 15
+INPUTS | 1 | q_51_OBUF.LFBK
+INPUTMC | 1 | 2 | 13
+EQ | 3 | 
+   q<52>.T = Vcc;
+   q<52>.CLK = !q_51_OBUF.LFBK;
+   q<52>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 2 | 15 | q_53_OBUF
+ATTRIBUTES | 4596514 | 0
+INPUTS | 1 | q_52_OBUF.LFBK
+INPUTMC | 1 | 2 | 14
+EQ | 3 | 
+   q<53>.T = Vcc;
+   q<53>.CLK = !q_52_OBUF.LFBK;
+   q<53>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 1 | q_54_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 2
+INPUTS | 1 | q<53>.PIN
+INPUTP | 1 | 59
+EQ | 3 | 
+   q<54>.T = Vcc;
+   q<54>.CLK = !q<53>.PIN;
+   q<54>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 2 | q_55_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 3
+INPUTS | 1 | q_54_OBUF.LFBK
+INPUTMC | 1 | 3 | 1
+EQ | 3 | 
+   q<55>.T = Vcc;
+   q<55>.CLK = !q_54_OBUF.LFBK;
+   q<55>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 3 | q_56_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 4
+INPUTS | 1 | q_55_OBUF.LFBK
+INPUTMC | 1 | 3 | 2
+EQ | 3 | 
+   q<56>.T = Vcc;
+   q<56>.CLK = !q_55_OBUF.LFBK;
+   q<56>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 4 | q_57_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 5
+INPUTS | 1 | q_56_OBUF.LFBK
+INPUTMC | 1 | 3 | 3
+EQ | 3 | 
+   q<57>.T = Vcc;
+   q<57>.CLK = !q_56_OBUF.LFBK;
+   q<57>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 5 | q_58_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 6
+INPUTS | 1 | q_57_OBUF.LFBK
+INPUTMC | 1 | 3 | 4
+EQ | 3 | 
+   q<58>.T = Vcc;
+   q<58>.CLK = !q_57_OBUF.LFBK;
+   q<58>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 6 | q_59_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 8
+INPUTS | 1 | q_58_OBUF.LFBK
+INPUTMC | 1 | 3 | 5
+EQ | 3 | 
+   q<59>.T = Vcc;
+   q<59>.CLK = !q_58_OBUF.LFBK;
+   q<59>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 7 | q_5_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 13
+INPUTS | 1 | q<4>.PIN
+INPUTP | 1 | 55
+EQ | 3 | 
+   q<5>.T = Vcc;
+   q<5>.CLK = !q<4>.PIN;
+   q<5>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 8 | q_60_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 9
+INPUTS | 1 | q_59_OBUF.LFBK
+INPUTMC | 1 | 3 | 6
+EQ | 3 | 
+   q<60>.T = Vcc;
+   q<60>.CLK = !q_59_OBUF.LFBK;
+   q<60>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 9 | q_61_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 10
+INPUTS | 1 | q_60_OBUF.LFBK
+INPUTMC | 1 | 3 | 8
+EQ | 3 | 
+   q<61>.T = Vcc;
+   q<61>.CLK = !q_60_OBUF.LFBK;
+   q<61>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 10 | q_62_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 11
+INPUTS | 1 | q_61_OBUF.LFBK
+INPUTMC | 1 | 3 | 9
+EQ | 3 | 
+   q<62>.T = Vcc;
+   q<62>.CLK = !q_61_OBUF.LFBK;
+   q<62>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 11 | q_63_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 12
+INPUTS | 1 | q_62_OBUF.LFBK
+INPUTMC | 1 | 3 | 10
+EQ | 3 | 
+   q<63>.T = Vcc;
+   q<63>.CLK = !q_62_OBUF.LFBK;
+   q<63>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 13 | q_6_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 14
+INPUTS | 1 | q_5_OBUF.LFBK
+INPUTMC | 1 | 3 | 7
+EQ | 3 | 
+   q<6>.T = Vcc;
+   q<6>.CLK = !q_5_OBUF.LFBK;
+   q<6>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 14 | q_7_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 15
+INPUTS | 1 | q_6_OBUF.LFBK
+INPUTMC | 1 | 3 | 13
+EQ | 3 | 
+   q<7>.T = Vcc;
+   q<7>.CLK = !q_6_OBUF.LFBK;
+   q<7>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 15 | q_8_OBUF
+ATTRIBUTES | 4662050 | 0
+OUTPUTMC | 1 | 3 | 16
+INPUTS | 1 | q_7_OBUF.LFBK
+INPUTMC | 1 | 3 | 14
+EQ | 3 | 
+   q<8>.T = Vcc;
+   q<8>.CLK = !q_7_OBUF.LFBK;
+   q<8>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 16 | q_9_OBUF
+ATTRIBUTES | 4596514 | 0
+INPUTS | 1 | q_8_OBUF.LFBK
+INPUTMC | 1 | 3 | 15
+EQ | 3 | 
+   q<9>.T = Vcc;
+   q<9>.CLK = !q_8_OBUF.LFBK;
+   q<9>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+MACROCELL | 3 | 12 | q_64_OBUF
+ATTRIBUTES | 4596514 | 0
+INPUTS | 1 | q_63_OBUF.LFBK
+INPUTMC | 1 | 3 | 11
+EQ | 3 | 
+   q<64>.T = Vcc;
+   q<64>.CLK = !q_63_OBUF.LFBK;
+   q<64>.AR = reset;	// GSR
+GLOBALS | 1 | 4 | reset
+
+PIN | clk | 4096 | 0 | N/A | 20 | 1 | 3 | 0
+PIN | reset | 65536 | 0 | N/A | 91 | 65 | 3 | 0 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 3 | 0 | 4 | 0 | 5 | 0 | 6 | 0 | 7 | 0 | 9 | 0 | 10 | 0 | 11 | 0 | 12 | 0 | 13 | 0 | 14 | 0 | 15 | 0 | 16 | 1 | 0 | 1 | 1 | 1 | 2 | 1 | 3 | 1 | 4 | 1 | 5 | 1 | 6 | 1 | 7 | 1 | 9 | 1 | 10 | 1 | 11 | 1 | 12 | 1 | 13 | 1 | 14 | 1 | 15 | 1 | 16 | 2 | 0 | 2 | 1 | 2 | 2 | 2 | 3 | 2 | 4 | 2 | 5 | 2 | 6 | 2 | 7 | 2 | 8 | 2 | 9 | 2 | 10 | 2 | 11 | 2 | 12 | 2 | 13 | 2 | 14 | 2 | 15 | 3 | 1 | 3 | 2 | 3 | 3 | 3 | 4 | 3 | 5 | 3 | 6 | 3 | 7 | 3 | 8 | 3 | 9 | 3 | 10 | 3 | 11 | 3 | 13 | 3 | 14 | 3 | 15 | 3 | 16 | 3 | 12
+PIN | q<10> | 536871040 | 0 | N/A | 14
+PIN | q<11> | 536871040 | 0 | N/A | 11
+PIN | q<12> | 536871040 | 0 | N/A | 16
+PIN | q<13> | 536871040 | 0 | N/A | 17
+PIN | q<14> | 536871040 | 0 | N/A | 12
+PIN | q<15> | 536871040 | 0 | N/A | 13
+PIN | q<16> | 536871040 | 0 | N/A | 22
+PIN | q<17> | 536871040 | 0 | N/A | 15
+PIN | q<18> | 536871040 | 0 | N/A | 25
+PIN | q<19> | 536871040 | 0 | N/A | 21
+PIN | q<20> | 536871040 | 0 | N/A | 32
+PIN | q<21> | 536871040 | 0 | N/A | 24
+PIN | q<22> | 536871040 | 0 | N/A | 26
+PIN | q<23> | 536871040 | 0 | N/A | 35
+PIN | q<25> | 536871040 | 0 | N/A | 79
+PIN | q<26> | 536871040 | 0 | N/A | 86
+PIN | q<27> | 536871040 | 0 | N/A | 83
+PIN | q<28> | 536871040 | 0 | N/A | 85
+PIN | q<29> | 536871040 | 0 | N/A | 87
+PIN | q<30> | 536871040 | 0 | N/A | 2
+PIN | q<31> | 536871040 | 0 | N/A | 89
+PIN | q<32> | 536871040 | 0 | N/A | 1
+PIN | q<33> | 536871040 | 0 | N/A | 3
+PIN | q<34> | 536871040 | 0 | N/A | 5
+PIN | q<35> | 536871040 | 0 | N/A | 6
+PIN | q<36> | 536871040 | 0 | N/A | 7
+PIN | q<37> | 536871040 | 0 | N/A | 9
+PIN | q<38> | 536871040 | 0 | N/A | 8
+PIN | q<3> | 536871040 | 0 | N/A | 37
+PIN | q<40> | 536871040 | 0 | N/A | 29
+PIN | q<41> | 536871040 | 0 | N/A | 43
+PIN | q<42> | 536871040 | 0 | N/A | 44
+PIN | q<43> | 536871040 | 0 | N/A | 31
+PIN | q<44> | 536871040 | 0 | N/A | 47
+PIN | q<45> | 536871040 | 0 | N/A | 48
+PIN | q<46> | 536871040 | 0 | N/A | 33
+PIN | q<47> | 536871040 | 0 | N/A | 38
+PIN | q<48> | 536871040 | 0 | N/A | 54
+PIN | q<49> | 536871040 | 0 | N/A | 46
+PIN | q<50> | 536871040 | 0 | N/A | 57
+PIN | q<51> | 536871040 | 0 | N/A | 49
+PIN | q<52> | 536871040 | 0 | N/A | 50
+PIN | q<54> | 536871040 | 0 | N/A | 58
+PIN | q<55> | 536871040 | 0 | N/A | 65
+PIN | q<56> | 536871040 | 0 | N/A | 66
+PIN | q<57> | 536871040 | 0 | N/A | 61
+PIN | q<58> | 536871040 | 0 | N/A | 69
+PIN | q<59> | 536871040 | 0 | N/A | 70
+PIN | q<5> | 536871040 | 0 | N/A | 62
+PIN | q<60> | 536871040 | 0 | N/A | 64
+PIN | q<61> | 536871040 | 0 | N/A | 73
+PIN | q<62> | 536871040 | 0 | N/A | 67
+PIN | q<63> | 536871040 | 0 | N/A | 74
+PIN | q<6> | 536871040 | 0 | N/A | 71
+PIN | q<7> | 536871040 | 0 | N/A | 81
+PIN | q<8> | 536871040 | 0 | N/A | 78
+PIN | q<64> | 536871040 | 0 | N/A | 77
+PIN | q<0> | 536870976 | 0 | N/A | 60 | 1 | 0 | 11
+PIN | q<1> | 536870976 | 0 | N/A | 30 | 1 | 1 | 5
+PIN | q<24> | 536870976 | 0 | N/A | 27 | 1 | 1 | 0
+PIN | q<2> | 536870976 | 0 | N/A | 88 | 1 | 2 | 0
+PIN | q<39> | 536870976 | 0 | N/A | 10 | 1 | 2 | 1
+PIN | q<4> | 536870976 | 0 | N/A | 55 | 1 | 3 | 7
+PIN | q<53> | 536870976 | 0 | N/A | 59 | 1 | 3 | 1
+PIN | q<9> | 536870976 | 0 | N/A | 82 | 1 | 0 | 0

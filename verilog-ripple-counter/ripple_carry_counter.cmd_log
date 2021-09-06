@@ -1,0 +1,80 @@
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ripple_carry_counter_map.ncd ripple_carry_counter.ngd ripple_carry_counter.pcf 
+par -w -intstyle ise -ol high -mt off ripple_carry_counter_map.ncd ripple_carry_counter.ncd ripple_carry_counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ripple_carry_counter.twx ripple_carry_counter.ncd -o ripple_carry_counter.twr ripple_carry_counter.pcf 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ripple_carry_counter_map.ncd ripple_carry_counter.ngd ripple_carry_counter.pcf 
+par -w -intstyle ise -ol high -mt off ripple_carry_counter_map.ncd ripple_carry_counter.ncd ripple_carry_counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ripple_carry_counter.twx ripple_carry_counter.ncd -o ripple_carry_counter.twr ripple_carry_counter.pcf 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ripple_carry_counter_map.ncd ripple_carry_counter.ngd ripple_carry_counter.pcf 
+par -w -intstyle ise -ol high -mt off ripple_carry_counter_map.ncd ripple_carry_counter.ncd ripple_carry_counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ripple_carry_counter.twx ripple_carry_counter.ncd -o ripple_carry_counter.twr ripple_carry_counter.pcf 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ripple_carry_counter_map.ncd ripple_carry_counter.ngd ripple_carry_counter.pcf 
+par -w -intstyle ise -ol high -mt off ripple_carry_counter_map.ncd ripple_carry_counter.ncd ripple_carry_counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ripple_carry_counter.twx ripple_carry_counter.ncd -o ripple_carry_counter.twr ripple_carry_counter.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ripple_carry_counter_map.ncd ripple_carry_counter.ngd ripple_carry_counter.pcf 
+par -w -intstyle ise -ol high -mt off ripple_carry_counter_map.ncd ripple_carry_counter.ncd ripple_carry_counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ripple_carry_counter.twx ripple_carry_counter.ncd -o ripple_carry_counter.twr ripple_carry_counter.pcf 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ripple_carry_counter_map.ncd ripple_carry_counter.ngd ripple_carry_counter.pcf 
+par -w -intstyle ise -ol high -mt off ripple_carry_counter_map.ncd ripple_carry_counter.ncd ripple_carry_counter.pcf 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ripple_carry_counter_map.ncd ripple_carry_counter.ngd ripple_carry_counter.pcf 
+par -w -intstyle ise -ol high -mt off ripple_carry_counter_map.ncd ripple_carry_counter.ncd ripple_carry_counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ripple_carry_counter.twx ripple_carry_counter.ncd -o ripple_carry_counter.twr ripple_carry_counter.pcf 
+netgen -intstyle ise -ar Structure -tm ripple_carry_counter -w -dir netgen/synthesis -ofmt vhdl -sim ripple_carry_counter.ngc ripple_carry_counter_synthesis.vhd 
+netgen -intstyle ise -ar Structure -tm ripple_carry_counter -w -dir netgen/synthesis -ofmt vhdl -sim ripple_carry_counter.ngc ripple_carry_counter_synthesis.vhd 
+bitgen -intstyle ise -f ripple_carry_counter.ut ripple_carry_counter.ncd 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ripple_carry_counter_map.ncd ripple_carry_counter.ngd ripple_carry_counter.pcf 
+par -w -intstyle ise -ol high -mt off ripple_carry_counter_map.ncd ripple_carry_counter.ncd ripple_carry_counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ripple_carry_counter.twx ripple_carry_counter.ncd -o ripple_carry_counter.twr ripple_carry_counter.pcf 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ripple_carry_counter_map.ncd ripple_carry_counter.ngd ripple_carry_counter.pcf 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ripple_carry_counter_map.ncd ripple_carry_counter.ngd ripple_carry_counter.pcf 
+par -w -intstyle ise -ol high -mt off ripple_carry_counter_map.ncd ripple_carry_counter.ncd ripple_carry_counter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ripple_carry_counter.twx ripple_carry_counter.ncd -o ripple_carry_counter.twr ripple_carry_counter.pcf 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc95144-TQ100-7 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+cpldfit -intstyle ise -p xc95144-7-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk ripple_carry_counter.ngd 
+XSLTProcess ripple_carry_counter_build.xml 
+tsim -intstyle ise ripple_carry_counter ripple_carry_counter.nga 
+taengine -intstyle ise -f ripple_carry_counter -w --format html1 -l ripple_carry_counter_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n ripple_carry_counter -i ripple_carry_counter 
+vhdtdtfi -lib work /opt/verilog/verilog-ripple-counter/ripple.v -lang verilog -prj verilog-ripple-counter -o ripple_carry_counter.spl -module ripple_carry_counter -template /opt/XilinxEmbedded/14.6/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family xc9500 ripple_carry_counter.spl /opt/verilog/verilog-ripple-counter/ripple_carry_counter.sym 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572-TQ100-7 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+cpldfit -intstyle ise -p xc9572-7-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk ripple_carry_counter.ngd 
+XSLTProcess ripple_carry_counter_build.xml 
+tsim -intstyle ise ripple_carry_counter ripple_carry_counter.nga 
+hprep6 -s IEEE1149 -n ripple_carry_counter -i ripple_carry_counter 
+cpldfit -intstyle ise -p xc9572-7-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk ripple_carry_counter.ngd 
+XSLTProcess ripple_carry_counter_build.xml 
+tsim -intstyle ise ripple_carry_counter ripple_carry_counter.nga 
+hprep6 -s IEEE1149 -n ripple_carry_counter -i ripple_carry_counter 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9536-PC44-7 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+cpldfit -intstyle ise -p xc9536-7-PC44 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk ripple_carry_counter.ngd 
+XSLTProcess ripple_carry_counter_build.xml 
+xst -intstyle ise -ifn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.xst" -ofn "/opt/verilog/verilog-ripple-counter/ripple_carry_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc9572-TQ100-7 ripple_carry_counter.ngc ripple_carry_counter.ngd  
+cpldfit -intstyle ise -p xc9572-7-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 36 -pterms 25 -power std -localfbk -pinfbk ripple_carry_counter.ngd 
+XSLTProcess ripple_carry_counter_build.xml 
+tsim -intstyle ise ripple_carry_counter ripple_carry_counter.nga 
+hprep6 -s IEEE1149 -n ripple_carry_counter -i ripple_carry_counter 

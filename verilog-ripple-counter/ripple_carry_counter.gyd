@@ -1,0 +1,102 @@
+Pin Freeze File:  version P.68d
+
+9572100TQ XC9572-7-TQ100
+clk S:PIN22
+reset S:PIN99
+q<0> S:PIN66
+q<10> S:PIN16
+q<11> S:PIN13
+q<12> S:PIN18
+q<13> S:PIN20
+q<14> S:PIN14
+q<15> S:PIN15
+q<16> S:PIN25
+q<17> S:PIN17
+q<18> S:PIN28
+q<19> S:PIN23
+q<1> S:PIN33
+q<20> S:PIN36
+q<21> S:PIN27
+q<22> S:PIN29
+q<23> S:PIN39
+q<24> S:PIN30
+q<25> S:PIN87
+q<26> S:PIN94
+q<27> S:PIN91
+q<28> S:PIN93
+q<29> S:PIN95
+q<2> S:PIN96
+q<30> S:PIN3
+q<31> S:PIN97
+q<32> S:PIN1
+q<33> S:PIN4
+q<34> S:PIN6
+q<35> S:PIN8
+q<36> S:PIN9
+q<37> S:PIN11
+q<38> S:PIN10
+q<39> S:PIN12
+q<3> S:PIN41
+q<40> S:PIN32
+q<41> S:PIN49
+q<42> S:PIN50
+q<43> S:PIN35
+q<44> S:PIN53
+q<45> S:PIN54
+q<46> S:PIN37
+q<47> S:PIN42
+q<48> S:PIN60
+q<49> S:PIN52
+q<4> S:PIN61
+q<50> S:PIN63
+q<51> S:PIN55
+q<52> S:PIN56
+q<53> S:PIN65
+q<54> S:PIN64
+q<55> S:PIN71
+q<56> S:PIN72
+q<57> S:PIN67
+q<58> S:PIN76
+q<59> S:PIN77
+q<5> S:PIN68
+q<60> S:PIN70
+q<61> S:PIN81
+q<62> S:PIN74
+q<63> S:PIN82
+q<64> S:PIN85
+q<6> S:PIN78
+q<7> S:PIN89
+q<8> S:PIN86
+q<9> S:PIN90
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 q_10_OBUF q_11_OBUF q_12_OBUF q_13_OBUF
+		 q_14_OBUF q_15_OBUF q_16_OBUF q_17_OBUF
+		
+PARTITION FB1_10 q_18_OBUF q_19_OBUF q_1_OBUF q_20_OBUF
+		 q_21_OBUF q_22_OBUF q_23_OBUF q_24_OBUF
+		
+
+PARTITION FB2_1 q_25_OBUF q_26_OBUF q_27_OBUF q_28_OBUF
+		 q_29_OBUF q_2_OBUF q_30_OBUF q_31_OBUF
+		
+PARTITION FB2_10 q_32_OBUF q_33_OBUF q_34_OBUF q_35_OBUF
+		 q_36_OBUF q_37_OBUF q_38_OBUF q_39_OBUF
+		
+
+PARTITION FB3_1 q_3_OBUF q_40_OBUF q_41_OBUF q_42_OBUF
+		 q_43_OBUF q_44_OBUF q_45_OBUF q_46_OBUF
+		 q_47_OBUF q_48_OBUF q_49_OBUF q_4_OBUF
+		 q_50_OBUF q_51_OBUF q_52_OBUF q_53_OBUF
+		
+
+PARTITION FB4_1 q_0_OBUF q_54_OBUF q_55_OBUF q_56_OBUF
+		 q_57_OBUF q_58_OBUF q_59_OBUF q_5_OBUF
+		 q_60_OBUF q_61_OBUF q_62_OBUF q_63_OBUF
+		 q_64_OBUF q_6_OBUF q_7_OBUF q_8_OBUF
+		 q_9_OBUF
+
+

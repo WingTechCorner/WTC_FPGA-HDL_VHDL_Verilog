@@ -1,0 +1,10 @@
+[Inputs]
+d
+clk
+reset
+[Outputs]
+q
+[BiDir]
+[ATTRIBUTES]
+VeriModel D_FF
+
